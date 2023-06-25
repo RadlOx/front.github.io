@@ -1,0 +1,85 @@
+/*MEDIA MOBILE PICCOLI*/
+@media (max-width:462px) {
+	.header__container {
+		width: 100%;
+	}
+	.items__text {
+		display: none;
+	}
+	.main {
+		width: 100%;
+	}
+}
+/*MEDIA MOBILE MEDI*/
+@media (min-width:462px) and (max-width:650px) {
+	.header__container {
+		width: 100%;
+	}
+	.items__text {
+		display: none;
+	}
+	.main {
+		width: 100%;
+	}
+}
+/*MEDIA MOBILE GRANDI E TABLET*/
+@media (min-width:650px) and (max-width:769px) {
+	.header__container {
+		width: 90%;
+	}
+	.items__text {
+		display: none;
+	}
+	.header ul {
+		display: flex;
+		align-items: center;
+	}
+	.nav-bar__items i {
+		font-size: 20px;
+	}
+	.main {
+		width: 89.5%;
+	}
+
+}
+/*MEDIA TABLET E MINI NOTEBOOK*/
+@media (min-width:769px) and (max-width:1000px) {
+	.header__container {
+		width: 90%;
+	}
+	.main {
+		width: 89.4%;
+	}
+	.items__text {
+		display: none;
+		color: aliceblue;
+		font-weight: bold;
+	}
+	.header__nav-bar .nav-bar__items:hover .items__text {
+		display: inline;
+	}
+	.header__nav-bar .nav-bar__items:hover .nav-icon {
+		display: none;
+	}
+}
+/*MEDIA NOTEBOOK E MONITOR*/
+@media (min-width:1000px) {
+	.main {
+		width: 68.5%;
+	}
+	.items__text {
+		display: none;
+		color: aliceblue;
+		font-weight: bold;
+	}
+	.header__nav-bar .nav-bar__items:hover .items__text {
+		display: inline;
+	}
+	.header__nav-bar .nav-bar__items:hover .nav-icon {
+		display: none;
+	}
+	.left-menu__container {
+		width: 25%;
+	}
+	
+}

@@ -1,0 +1,286 @@
+/*VARIABILI DI STILE*/
+:root {
+	--bgc1-color: #353535; --bgc1-transp-color: #3535354a;
+	--bgc2-color: #282828; --bgc2-transp-color: #66666647;
+	--bgc3-color: #284b63;
+	--form-color: #f2f2f2;
+	--details-color: #3c6e71;
+	--extra1-color: #d9d9d9;
+	--extra2-color: #eb5e28;
+	--extra3-color: #aec3b0;
+	--shadow1-color: #181818d4;
+	--shadow2-color:
+}
+
+/************************/
+
+/*GENERAL SETTINGS*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} 
+
+body {
+	font-family: sans-serif;
+	background-color: var(--bgc1-color);
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+/************************/
+
+/*SOCIAL E RICONOSCIMENTI*/
+.design-by {
+	position: absolute;
+	bottom:10px;
+	left:10px;
+	color: var(--bgc2-color);
+}
+
+.social-cont {
+	position:absolute;
+	right:-46px;
+	z-index: 1;
+	bottom:300px;
+
+} 
+
+.social-btn .fa-square-facebook {
+	background-color: var(--bgc3-color);
+	border-radius: 0 30px 30px 0;
+	padding: 14px;
+	color:var(--extra1-color);
+	display:block;
+	margin-top:10px;
+	box-shadow: 11px 0 21px 0px var(--shadow1-color) inset;
+
+}
+.social-btn .fa-youtube {
+	background-color: var(--extra2-color);
+	border-radius: 0 30px 30px 0;
+	padding: 14px;
+	color:var(--extra1-color);
+	display:block;
+	margin-top:10px;
+	box-shadow: 11px 0 21px 0px var(--shadow1-color) inset;
+
+}
+.social-btn .fa-twitter {
+	background-color: var(--details-color);
+	border-radius: 0 50px 50px 0;
+	padding: 14px;
+	color:var(--extra1-color);
+	display:block;
+	margin-top:10px;
+	box-shadow: 11px 0 21px 0px var(--shadow1-color) inset;
+
+}
+
+.social-btn .fa-brands:hover {
+	transform: translateX(20px);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	box-shadow: 1px 0 4px 0px var(--shadow1-color);
+}
+
+/************************/
+
+/*SCROLL-BAR PROP.*/
+::-webkit-scrollbar{ /*scrollbar*/
+    width:0.8em;
+    height:0.01em;
+	background: var(--bgc1-color);
+	display: none; /*inv.*/
+	margin-right: 10px;
+}
+::-webkit-scrollbar:hover{
+    background-color:var(--bgc2-color) ;
+	border: none;
+}
+::-webkit-scrollbar-thumb{ /*elemento mobile scroll-bar*/
+    min-height:0.8em;
+    min-width:0.8em;
+    -webkit-border-radius:4px;
+    background-color: var(--details-color);
+	border: none;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--bgc3-color);
+	border: none;
+}
+::-webkit-scrollbar-thumb:active{ /*se cliccato*/ 
+    background-color:var(--details-color)	;
+	border: none;
+}
+
+/************************/
+
+/*HEADER PRINC.*/
+.header {
+	background-color: var(--bgc2-transp-color);	
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 250px;
+	border-radius: 0 0 50% 50%;
+	
+}
+
+.header__container {  /*div cont centrale header*/
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	height: 60px;
+	margin:0 auto;
+	max-width: 986px;
+	background-color: var(--bgc2-color);
+	box-shadow: 0 0 14px 0 var(--shadow1-color);
+}
+
+/************************/
+
+/*LOGO HEADER*/
+.header__logo .fa-crown {
+	font-size:30px;
+	padding: 14px;
+	color: var(--details-color);
+}
+
+.header__logo .fa-crown:hover {
+	transform: rotate(-35deg);
+	transition: .4s ease-in-out;
+	color: var(--extra1-color);
+}
+
+/************************/
+
+/*MENU HEADER PRINCIPALE */
+.header__nav-bar { /*princ.*/
+	display: flex;
+	width: 70%;
+	list-style: none;
+}
+
+.header__nav-bar i { /*icone voci menù*/
+	color: rgb(231, 223, 223);
+	display: flex;
+	align-items: center;
+}
+
+.header__nav-bar .nav-bar__items { /*voci menù*/
+	padding: 13px 30px;
+	width: 100%;
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+/************************/
+
+/*MAIN*/
+.margin_main { /*div di margine del main*/
+	margin: 0 auto;
+	position: absolute;
+}
+
+.main { /*cont. centro*/ 
+	position: relative;
+	top:-140px;
+	width: 70%;
+	margin:0 auto;
+	background-color: var(--bgc1-color);
+	height: 75vh;
+	box-shadow: 0 0 15px 0 var(--shadow1-color);
+	z-index: 9;
+}
+
+.banner-top {
+	background-image: url(/Images/sfondo\ banner\ geometry.svg);
+	background-size: cover;
+	width: 72%;
+	height: 120px;
+	margin-left:26.25%;
+	position: absolute;
+	top:58px;
+	z-index: 1;
+}
+
+.banner-top:hover {
+	background-image: url(/Images/sfondo\ banner\ redwhite.svg);
+}
+
+.under-banner {
+	background-image: url(/Images/sfondo\ banner\ geometry.svg);
+	background-size: cover;
+	width: 72%;
+	height: 220px;
+	margin-left:26.25%;
+	position: absolute;
+	top:208px;
+	z-index: 1;}
+
+/************************/
+
+/*MENU LATERALE : LEFT-MENU*/
+.title-leftmenu {
+	text-align: left;
+	width: 100%;
+	background-color: var(--bgc2-transp-color);
+	color: var(--extra1-color);
+	font-size: 13px;
+	padding: 10px 55px;
+	margin-top: 10px
+}
+
+.left-menu__container {
+	overflow: scroll;
+	overflow-x: hidden;
+	width: 25%;
+	height: 68.5vh;
+}
+
+.left-menu { /*(ul) menu*/
+	list-style-type: none;	
+}
+
+.left-menu__items { /*voci menu (li)*/
+	width: 100%;
+	border-bottom: 1px solid var(--bgc2-transp-color);
+	padding: 10px;
+	background-color: var(--bgc2-color);
+}
+
+.left-menu__items:hover {
+	background-color: var(--details-color);
+}
+
+.left-menu__items:hover a {
+	color: var(--bgc2-color);
+}
+
+.left-menu__items:hover .left-menu__icon {
+	color: var(--extra1-color);
+}
+
+.left-menu__items .left-menu__icon { /*icone*/
+	margin:0 5px 0 15px;
+	color:var(--details-color);
+	width: 15px;
+	height: 15px;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+.left-top-icons {
+	color: var(--bgc1-color);
+}
+
+/************************/
+
