@@ -1,3 +1,12 @@
+:root {
+	--bgc-color: #fff;
+	--bgc-dark-color: #181818;
+	--details-color: #a8dadc;
+	--details2-color: #212121;
+	--primary-color: #e63946;
+}
+
+
 @media (max-width:914px) {
 
 	.header {
@@ -46,6 +55,7 @@
 	
 	.header .menu-btn:checked ~ .menu {
 		max-height: 100vh;
+		z-index: 999;
 		overflow: auto;
 		border-radius: 10px 10px 0 0 ;
 	}
@@ -86,11 +96,21 @@
 		display: none;
 	}
 	.cont-search {
-		position: absolute;
-		visibility: hidden;
+	position: absolute;
+		top:20px;
+		left:100px;
+		width: 60%;
 	}
-	.user-area,
-	.submenu-desk {
+
+	.submenu-desk a {
+		display: flex;
+		width: auto;
+		
+	}
+	.cont-social {
+		display: none;
+	}
+	.user-area {
 		display: none;
 	}
 }

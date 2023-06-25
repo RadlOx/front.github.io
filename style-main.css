@@ -14,7 +14,7 @@
 
 	width: 100%;
 	z-index: 99;
-	background-image: url(banner-header-natura2.svg);
+	background-image: url(/media/banner-header-natura.svg);
 	background-size: cover;
 }
 
@@ -79,12 +79,23 @@
 	background-color: #be0f1e;
 	color: var(--bgc-dark-color);
 }
+
 #input-search {
+	height: 30px;
+	width: 80%;
+	border-radius: 15px 0 0 15px;
+	line-height: 30px;
+	outline: none;
+	border:none;
+	padding: 0 10px;
 	z-index: 99;
 }
+
 .menu-btn {
 	display: none;
 }
+
+
 
 /**********************/
 
@@ -99,6 +110,35 @@
 	padding-right: 10px;
 }
 
+#sub-item9 {
+	background-color: var(--primary-color);
+}
+.submenu-desk::-webkit-scrollbar{
+	height: 4px;
+}
+
+.submenu-desk {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	overflow-x:scroll;
+
+}
+.submenu-desk a {
+	color: var(--bgc-color);
+	opacity: .7;
+	font-size: 13px;
+	padding: 14px 30px;
+	border-right: 1px solid rgba(85, 85, 85, 0.692);
+}
+.submenu-desk a:hover {
+	/* background-color: rgba(59, 59, 59, 0.622); */
+
+	opacity: 1;
+	color: var(--bgc-color);
+	transition: .3s;
+}
+
 .sep .cont-social .fa-brands {
 	padding: 11px;
 	font-size: 18px;
@@ -107,7 +147,10 @@
 
 	color: var(--bgc-color);
 }
-
+.cont-submenu {
+	width: 80%;
+	margin-left: 20px;
+}
 /********/
 
 .main {
