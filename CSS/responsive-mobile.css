@@ -1,0 +1,97 @@
+@media (max-width:914px) {
+
+	.header {
+		background:none;
+	}
+	.header .menu-icon {
+		padding: 33px 20px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+	
+	}
+	.vert-item {
+		border-bottom: 1px solid rgba(18, 18, 18, 0.445);
+	}
+	
+	.header .menu-icon .nav-icon {
+		background-color: var(--bgc-color);
+		display: block;
+		width: 22px;
+		height: 2px;
+		position: relative;
+		transition: background-color .2s ease-out;
+	}
+	
+	.header .menu-icon .nav-icon::before,
+	.header .menu-icon .nav-icon::after {
+		content: '';
+		background-color: var(--primary-color);
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+	}
+	.header .menu-icon .nav-icon::after {
+		top:6px;
+	}
+	.header .menu-icon .nav-icon::before {
+		top:-6px;
+	}
+	
+	.header .menu-btn {
+		display: none;
+	}
+	
+	.header .menu-btn:checked ~ .menu {
+		max-height: 100vh;
+		overflow: auto;
+		border-radius: 10px 10px 0 0 ;
+	}
+	
+	.header .menu-btn:checked ~ .menu-icon .nav-icon {
+		background-color: transparent;
+	}
+	
+	.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+		transform: rotate(-305deg);
+		transition: 1.4s;
+		top:0;
+	}
+	
+	.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+		transform: rotate(305deg);
+		transition: 1s;
+		top:0;
+	}
+	
+	.header .menu .oriz-container { 
+		width: 100%;
+	}
+	.header .menu .oriz-container .oriz-menu {
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		border-bottom:1px solid rgba(47, 47, 47, 0.579);
+	}
+	.header ul .oriz-container ul li a  {
+		border-bottom: none;
+		background-color: transparent;
+	}
+	.header .box-container  {
+		display:none;
+	}
+	.menu-desk {
+		display: none;
+	}
+	.cont-search {
+		position: absolute;
+		visibility: hidden;
+	}
+	.user-area,
+	.submenu-desk {
+		display: none;
+	}
+}
+
