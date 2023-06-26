@@ -136,6 +136,7 @@
 		background-color: #2e2e2e2c;
 		border-color: #e6394733;
 	}
+	
 	.all-category li a:hover {
 		background-color:var(--primary-color);
 	

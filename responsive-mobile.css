@@ -125,7 +125,7 @@
 	.all-category {
 		list-style-type: none;
 		margin: 10px 20px;
-		width: 100%;
+		width: 92%;
 	}
 	.all-category li {
 		background-color: var(--details2-color);
@@ -159,6 +159,7 @@
 		margin: 10px;
 		color: #e63947c3;
 		display: flex;
+		flex-direction: column;
 		font-weight: bold;
 		border-radius: 7px;
 	}
