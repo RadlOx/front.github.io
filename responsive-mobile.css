@@ -1,19 +1,24 @@
-@media (max-width:989px) {
+@media (max-width:689px) {
 	.header {
-		background-color: #212121;
+		background-color: #2A2B2A;
 		position: relative;
-		height: 5vh;
-		justify-content: space-around;
+		height: 7vh;
+		justify-content: space-between;
 		align-items: center;
 	}
 	.header .logo {
-		margin:auto;
+		color: #fff;
+		text-decoration: none;
+		margin: 12px;
+		position: relative;
+		top:3px;
 	}
 	/*SEARCH BOX*/
 	.header .box-search {
 		padding: 10px;
-		width: 60%;
+		width: 50%;
 		position: relative;
+		right:7%;
 		display: flex;
 		transform: translateX(-200%);
 		z-index: 1;
@@ -28,10 +33,12 @@
 	.header .box-search #input-search {
 		border-radius: 30px;
 		line-height: 25px;
-		padding-left: 28px;
+		padding-left: 20px;
+		color: #bbbbbb;
 		position: relative;
 		background-color: #181818;
 		border:none;
+		outline: none;
 	}
 	.header .box-search .label-search {
 		position: absolute;
@@ -45,7 +52,7 @@
 		margin: 0px 30px;
 		position: absolute;
 		right: 25px;
-		top:1.3vh;
+		top:2.4vh;
 		z-index: 2;
 
 	}
@@ -54,9 +61,9 @@
 		max-width: 1000px;
 		background-color: #212121;
 		display: block;
-		margin-top:1vh;
+		margin-top:2.99vh;
 		width: 100%;
-		height: 95vh;
+		height: 94vh;
 		position: fixed;
 		transform: translateX(100%);
 	}
@@ -129,7 +136,8 @@
 	#check-menu:checked ~ .box-icon .icon-menu {
 		background-color: transparent;
 	}
-	#check-menu:checked ~ .icon-search {
-		visibility: hidden;
+
+	.main {
+		margin: -1px;
 	}
 }
