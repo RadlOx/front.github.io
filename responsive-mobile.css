@@ -12,7 +12,8 @@
 		text-decoration: none;
 		margin: 12px;
 		position: relative;
-		top:3px;
+		top:2.8px;
+		width: auto;
 	}
 
 	/*SEARCH BOX*/
@@ -90,9 +91,9 @@
 		max-width: 1000px;
 		background-color: #181818;
 		display: block;
-		margin-top:6vh;
+		margin-top:5.9vh;
 		width: 100%;
-		height: 90vh;
+		height: 90.3vh;
 		position: fixed;
 		transform: translateX(100%);
 		overflow: scroll;
@@ -106,8 +107,6 @@
 	
 	.header .navbar .navbar_menu li:Hover a{
 		color: #181818;
-		text-transform: uppercase;
-		font-size: 13px;
 	}
 	
 
@@ -123,6 +122,26 @@
 		width: 95%;
 		background: #181818;
 		margin: 0 auto;
+	}
+	.header .navbar .box-submenu .set-submenu {
+		color: #c28a21;
+		text-align: left;
+		border:1px solid #242424;
+		border-left: 4px groove #c28a2163 ;
+		margin: 30px 0;
+		border-radius: 0 10px 10px 10px;
+		position: relative;
+
+	}
+	
+	.header .navbar .box-submenu .legend-submenu {
+		background-color: #242424;
+		padding: 2px 30px;
+		position: relative;
+		font-size: 12px;
+		left: -3.8px;
+		border-radius: 50px 50px 50px 0;
+		border-left: 4px groove #c28a2163;
 	}
 	.header .navbar .box-submenu .banner .sub-banner {
 		padding: 50px;
@@ -148,15 +167,16 @@
 		border-radius: 10px;
 		margin: 10px;
 		padding-left: 3px;
-		border-left:4px groove #c28a21;
+		border-left:4px groove #212121;
 	}
 	
 	.header .navbar .box-submenu .navbar_submenu li:hover {
 		border-lefT:none;
 		border-right:4px groove #c28a21;
+		background-color: #9b6e1a;
 	}
 	.header .navbar .box-submenu .navbar_submenu li:hover .sub-icon {
-		color: #c28a21;
+		color: #161616;
 	}
 	.header .navbar .box-icons-navbar {
 		justify-content: space-around;
