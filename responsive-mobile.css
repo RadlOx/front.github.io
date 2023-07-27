@@ -1,6 +1,6 @@
 @media (max-width:689px) {
 	.header {
-		background-color: #2A2B2A;
+		background-color: #181818;
 		position: relative;
 		height: 10vh;
 		justify-content: space-between;
@@ -23,25 +23,32 @@
 		right:10%;
 		transform: translateX(-200%);
 		z-index: 1;
+		margin-left: 30px;
+		justify-content: center;
 	}
 	.header #search-resoult {
 		color: #fff;
 		padding: 0 20px 10px 20px;
 		display: block;
 		position: absolute;
-		left:8.1%;
 		top:28px;
-		width:91%;
+		width:72%;
 		border-radius: 0 0 20px 20px;
-		background-color: #181818;
+		background-color: #212121;
 		z-index: 1;
+		box-shadow: 0 0 14px 0 #212121;
 	}
+
 	.header #search-resoult ul {
 		list-style: none;
 	}
 	.header #search-resoult ul li {
-		padding: 10px;		
+		padding: 10px;	
 	}
+	.header #search-resoult  ul li:nth-child(odd) {
+		color: #c28a21;
+	}
+
 	.header #search-resoult ul li:hover {
 		background-color: #c22121;
 
@@ -57,12 +64,11 @@
 		border-radius: 30px;
 		line-height: 25px;
 		padding: 0 20px;
-		color: #bbbbbb;
-		width: 100%;
+		color: #717171;
+		width: 80%;
 		position: relative;
 		top:2px;
-		left:4%;
-		background-color: #181818;
+		background-color: #212121;
 		border:none;
 		outline: none;
 		z-index: 2;
@@ -116,8 +122,10 @@
 	}
 
 	.header .navbar .box-submenu .left,
+	.header .navbar .box-submenu .center,
 	.header .navbar .box-submenu .right	{
 		text-align: center;
+		padding: 10px;
 		width: 50%;
 	}
 	.header .navbar .box-submenu .navbar_submenu {
@@ -130,15 +138,21 @@
 	.header .navbar .box-icons-navbar {
 		justify-content: space-around;
 		align-items: center;
-		background-color: #ab1717;
 		width: 100%;
-		height: 50px;
+		height: 80px;
 	}
 	.header .navbar .box-icons-navbar i {
-		background-color: #8b0e0e;
+		background-color: #63636343;
+		box-shadow: 0 0 14px 0 #9c9c9c6d;
 		padding: 15px;
-		color:#262626;
-		border-radius: 10px ;
+		color:#ffffffc9;
+		border-radius: 50%;
+	}
+	
+	.header .navbar .box-icons-navbar i:hover {
+		background-color: #f5af169d;
+		box-shadow: 0 0 14px 0 #f5ae16be;
+		color:#ffffffc9;
 	}
 	
 	.header .navbar .navbar_menu {
@@ -164,6 +178,11 @@
 		padding: 20px 10px;
 		color: #bbbbbb;
 	}
+	.header .navbar .navbar_submenu .sub-menu_items a i{
+		margin-right: 10px;
+		opacity: .6;
+	}
+
 	.header .navbar .navbar_menu .menu_items i {
 		position: absolute;
 		right: 20px;
