@@ -18,10 +18,31 @@
 		padding: 10px;
 		width: 50%;
 		position: relative;
-		right:7%;
-		display: flex;
+		right:10%;
 		transform: translateX(-200%);
 		z-index: 1;
+	}
+	.header #search-resoult {
+		color: #fff;
+		padding: 0 20px 10px 20px;
+		display: block;
+		position: absolute;
+		top:25px;
+		width: 100%;
+		border-radius: 0 0 20px 20px;
+		background-color: #181818;
+		z-index: 1;
+	}
+	.header #search-resoult ul {
+		list-style: none;
+	}
+	.header #search-resoult ul li {
+		padding: 10px;
+		
+	}
+	.header #search-resoult ul li:hover {
+		background-color: #c22121;
+
 	}
 	.header #check-search {
 		display: none;
@@ -33,12 +54,13 @@
 	.header .box-search #input-search {
 		border-radius: 30px;
 		line-height: 25px;
-		padding-left: 20px;
+		padding: 0 20px;
 		color: #bbbbbb;
 		position: relative;
 		background-color: #181818;
 		border:none;
 		outline: none;
+		z-index: 2;
 	}
 	.header .box-search .label-search {
 		position: absolute;
