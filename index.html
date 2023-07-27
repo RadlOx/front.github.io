@@ -1,77 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<title>SITO</title>
 	<link rel="stylesheet" href="main-style.css">
-	<link rel="stylesheet" href="desk-style.css">
-	<link rel="stylesheet" href="mobile-style.css">
-	<link rel="stylesheet" href="setting-style.css">
-
+	<link rel="stylesheet" href="responsive-mobile.css">
 	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script>
-
-	<title>MGS</title>
-
 </head>
 <body>
-<!--MOBILE HEADER-->
-<header class="header-mobile">
-	<nav class="nav"> <!--contenitore menù-->
-		<ul class="nav-bar"> <!--menù-->
-			<li class="nav-items">
-				<a href="#">
-					<i class="fa-solid fa-message"></i>
-				</a>
-			</li>
-			<li class="nav-items">
-				<a href="#">
-					<i class="fa-solid fa-list"></i>
-				</a>
-			</li>
-			<li class="nav-items">
-				<a href="#">
-					<i class="fa-solid fa-shop"></i>
-				</a>
-			</li>
-			<li class="nav-items">
-				<a href="#">
-					<i class="fa-solid fa-download"></i>
-				</a>
-			</li>
-			<li class="nav-items">
-				<a href="#">
-					<i class="fa-solid fa-gear"></i>
-				</a>
-			</li>
-		</ul>
-	</nav>
-</header>
-<!--FINE MOBILE HEADER-->
-
-<!--MAIN CONTENT-->
-<div class="main">
-	<div class="page">
-		<div class="content-page">
+	<div class="header flex">
+		<!--LOGO-->
+		<a href="#" class="logo"><i class="fa-solid fa-crown"></i></a>
+		<!--/////////-->
+		<!--CHECK MENU MOBILE parte 1-->
+		<input type="checkbox" name="check-menu" id="check-menu">
+		<!--BOX SEARCH-->
+		<input type="checkbox" name="check-search" id="check-search"> <!--check open search-->
+		<label for="check-search" class="icon-search"> <!--icona open search-->
+			<i class="fa-solid fa-search"></i>
+		</label>
+		<div class="box-search">
+			<input type="text" id="input-search">
+			<label for="input-search" class="label-search"><i class="fa-solid fa-search"></i></label>
 		</div>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias similique eveniet ea quas dicta et voluptatibus maxime dolore incidunt eos doloremque minima beatae quod suscipit perspiciatis, aliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicingaliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicingaliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicingaliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicingaliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicingaliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicingaliquam ducimus blanditiis quidem.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum obcaecati pariatur nesciunt ducimus labore asperiores deserunt, officia maiores est repellat ipsam magni aut esse, expedita accusamus amet dignissimos iste nemo!Loremlore
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum necessitatibus iure facilis, dolorem, porro eveniet odio recusandae eaque cupiditate, atque nulla in aperiam illo suscipit quam tempore sequi
-		</p>
+		<!--/////////-->
+
+		<!--CHECK MENU MOBILE parte 2-->
+		<label class="box-icon" for="check-menu">
+			<span class="icon-menu"></span>
+		</label>
+		<!--/////////-->
+
+		<!--NAVBAR MENU-->
+		<nav class="navbar flex">
+			<ul class="navbar_menu flex">
+				<li class="menu_items"><a href="#">Pages</a></li>
+				<li class="menu_items"><a href="#">About us</a></li>
+				<li class="menu_items"><a href="#">Projects</a></li>
+				<li class="menu_items"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<!--/////////-->
 	</div>
-</div>
-<!--FINE MAIN CONTENT-->
 </body>
 </html>
