@@ -2,9 +2,10 @@
 	.header {
 		background-color: #2A2B2A;
 		position: relative;
-		height: 7vh;
+		height: 10vh;
 		justify-content: space-between;
 		align-items: center;
+		bottom:0;
 	}
 	.header .logo {
 		color: #fff;
@@ -16,7 +17,7 @@
 	/*SEARCH BOX*/
 	.header .box-search {
 		padding: 10px;
-		width: 50%;
+		width: auto;
 		position: relative;
 		right:10%;
 		transform: translateX(-200%);
@@ -27,8 +28,9 @@
 		padding: 0 20px 10px 20px;
 		display: block;
 		position: absolute;
-		top:25px;
-		width: 100%;
+		left:13.5%;
+		top:28px;
+		width:91%;
 		border-radius: 0 0 20px 20px;
 		background-color: #181818;
 		z-index: 1;
@@ -37,8 +39,7 @@
 		list-style: none;
 	}
 	.header #search-resoult ul li {
-		padding: 10px;
-		
+		padding: 10px;		
 	}
 	.header #search-resoult ul li:hover {
 		background-color: #c22121;
@@ -56,17 +57,14 @@
 		line-height: 25px;
 		padding: 0 20px;
 		color: #bbbbbb;
+		width: 100%;
 		position: relative;
+		top:2px;
+		left:10%;
 		background-color: #181818;
 		border:none;
 		outline: none;
 		z-index: 2;
-	}
-	.header .box-search .label-search {
-		position: absolute;
-		left: 15px;
-		cursor: pointer;
-		padding:4px;
 	}
 	.header .icon-search i {
 		color: #bbbbbb;
@@ -74,7 +72,7 @@
 		margin: 0px 30px;
 		position: absolute;
 		right: 25px;
-		top:2.4vh;
+		top:3.8vh;
 		z-index: 2;
 
 	}
@@ -83,12 +81,26 @@
 		max-width: 1000px;
 		background-color: #212121;
 		display: block;
-		margin-top:2.99vh;
+		margin-top:6vh;
 		width: 100%;
-		height: 94vh;
+		height: 90vh;
 		position: fixed;
 		transform: translateX(100%);
 	}
+	.header .navbar .box-icons-navbar {
+		justify-content: space-around;
+		align-items: center;
+		background-color: #ab1717;
+		width: 100%;
+		height: 50px;
+	}
+	.header .navbar .box-icons-navbar i {
+		background-color: #8b0e0e;
+		padding: 15px;
+		color:#262626;
+		border-radius: 10px ;
+	}
+	
 	.header .navbar .navbar_menu {
 		position: absolute;
 		display: block;
