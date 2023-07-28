@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SITO</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="main-style.css">
 	<link rel="stylesheet" href="responsive-mobile.css">
 	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script>
@@ -76,10 +77,18 @@
 							</div>
 							<div class="right">
 								
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Pages</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> About us</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Projects</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Contact</a></li>
+								<li class="sub-menu_items">
+									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> Pages</a>
+								</li>
+								<li class="sub-menu_items">
+									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> About us</a>
+								</li>
+								<li class="sub-menu_items">
+									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> Projects</a>
+								</li>
+								<li class="sub-menu_items">
+									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> Contact</a>
+								</li>
 						
 							</div>
 						</ul>
@@ -96,12 +105,26 @@
 	<div class="main">
 		<div class="main-container">
 			<div class="main-content">
-				<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/1_c82e56ef-6bf6-4421-9799-7eda01512337.png?v=1690554772" width="100%" alt="">
-				<div class="hover-btn">
-					<a href="#"></a>
+				<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/BASE.png?v=1690562292" width="100%" alt="">
+
+				<div data-aos="fade-up-left" class="hover-img">
+					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/summer_1.png?v=1690561460" id="hover-arm" width="100%" alt="">				
 				</div>
+
+				<div data-aos="fade-right" class="hover-img">
+					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/TESTO.PRINC.HOVER_GYM.png?v=1690562289" id="hover-princ-txt" width="100%" alt="">				
+				</div>
+
+				<div data-aos="zoom-in" data-aos-duration="2000" class="hover-img">
+					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/PARAGRAFO.png?v=1690562290" id="hover-parag" width="100%" alt="">				
+				</div>
+
+				<div data-aos="fade-up"	data-aos-duration="1000" class="hover-img">
+					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/5.png?v=1690562289" id="hover-parag" width="100%" alt="">				
+				</div>
+
 			</div>
-			<div class="main-content">
+			<div data-aos="fade-up-right" class="main-content">
 				<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/2_493c0381-298f-4c60-8d77-0aa72d5c73bd.png?v=1690554775" width="100%" alt="">
 			</div>
 			
@@ -109,5 +132,9 @@
 	</div>
 
 	<script src="script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

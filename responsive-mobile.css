@@ -308,14 +308,10 @@
 	.main .main-container .main-content {
 		position: relative;
 	}
-	.main .main-container .main-content .hover-btn a {
-		position: absolute;
-		width: 120px;
-		bottom: 123px;
-		right: 90px;
-		z-index: 3;
-		height: 60px;
-		cursor: pointer;
-	}
 
+	.main .main-container .hover-img {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+	}
 }
