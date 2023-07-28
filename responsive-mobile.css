@@ -303,7 +303,7 @@
 	}
 
 	.main {
-		margin: -1px;
+		margin-top:20px;
 	}
 	.main .main-container .main-content {
 		position: relative;
