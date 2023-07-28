@@ -304,6 +304,8 @@
 
 	.main {
 		margin-top:20px;
+		overflow-x: hidden;
+
 	}
 	.main .main-container .main-content {
 		position: relative;
