@@ -2,11 +2,13 @@
 	.header {
 		background-color: #181818;
 		position: relative;
+		position: fixed;
 		height: 10vh;
 		width: 100%;
 		z-index: 9;
 		justify-content: space-between;
 		align-items: center;
+		top:0;
 	}
 
 	.header .logo {
@@ -303,10 +305,17 @@
 	.main {
 		margin: -1px;
 	}
-	.main .main-container  {
-		height: auto;
-		padding: 0;
-		margin: 0;
-	
+	.main .main-container .main-content {
+		position: relative;
 	}
+	.main .main-container .main-content .hover-btn a {
+		position: absolute;
+		width: 120px;
+		bottom: 123px;
+		right: 90px;
+		z-index: 3;
+		height: 60px;
+		cursor: pointer;
+	}
+
 }
