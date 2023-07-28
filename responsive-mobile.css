@@ -1,8 +1,9 @@
 @media (max-width:689px) {
 	.header {
-		background-color: #181818;
+		background-color: transparent;
 		position: relative;
-		position: fixed;
+		background: transparent;
+		position:-ms-page;
 		height: 10vh;
 		width: 100%;
 		z-index: 9;
@@ -31,6 +32,7 @@
 		margin-left: 30px;
 		justify-content: center;
 		top:-2px;
+		display: none;
 	}
 	.header #search-resoult {
 		color: #fff;
@@ -87,6 +89,7 @@
 		right: 25px;
 		top:3.8vh;
 		z-index: 2;
+		display: none;
 
 	}
 
@@ -278,7 +281,7 @@
 	.box-icon .icon-menu::after {
 		top:7px;
 	}
-	/*FUNZIONE APERTURA AL CLICK*/
+	/* FUNZIONE APERTURA AL CLICK */
 	#check-menu:checked ~ .navbar {
 		transition: .3s ease-in-out;
 		transform: translateX(0);
@@ -303,8 +306,8 @@
 	}
 
 	.main {
-		margin-top:20px;
 		overflow-x: hidden;
+		margin-top: -10vh;
 
 	}
 	.main .main-container .main-content {
@@ -315,5 +318,37 @@
 		position: absolute;
 		z-index: 2;
 		top: 0;
+	}
+	.main .main-container .video-cont {
+		position: relative;
+	}
+	#btn-pt1  {
+		position: absolute;
+		top:40%;
+		left: 0;
+		width: 230px;
+		height: 200px;
+	}
+	#btn-pt2  {
+		position: absolute;
+		top:40%;
+		right: 0;
+		width: 230px;
+		height: 200px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#btn-pt2 a {
+		background-color: #464444a2;
+		backdrop-filter: blur(2px);
+		position: absolute;
+		color:#eaeaea;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding:20px 80px;
+		
 	}
 }
