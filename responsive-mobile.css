@@ -42,19 +42,19 @@
 		transform: translateX(100%);
 		overflow: scroll;
 	}
-	.header .navbar #page1 {
-		transform: translate(100%);
+	.header .navbar #page1,#page2,#page3,#page4,#page0 {
 		position: absolute;
-		width: 100%;
-		height: 90vh;
-		top: 10vh;
-		background-color: #fff;
-		z-index: 99;
-	}
-	.header .navbar input {
+		color: #bbbbbb;
+		padding: 30px;
+		border:1px solid red;
+		
 		display: none;
+		width: 100%;
+		height: 70vh;
+		top: 10vh;
+		background-color: #181818;
+		z-index: 9;
 	}
-
 
 	.header .under-menu {
 		width: 100%;
