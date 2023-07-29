@@ -23,7 +23,7 @@
 		page3.style.display ="none";
 		page4.style.display ="none";
 		icon0.style.borderRadius = "5px";
-		icon0.style.backgroundColor = "#f5af169d";
+		icon0.style.backgroundColor = "#c28a21";
 		icon1.style.backgroundColor = "#63636343";
 		icon2.style.backgroundColor = "#63636343";
 		icon3.style.backgroundColor = "#63636343";
@@ -43,7 +43,7 @@
 				page4.style.display ="none";
 				page1.style.display ="block";
 				icon1.style.borderRadius = "5px";
-				icon1.style.backgroundColor = "#f5af169d";
+				icon1.style.backgroundColor = "#c28a21";
 				icon2.style.backgroundColor = "#63636343";
 				icon3.style.backgroundColor = "#63636343";
 				icon4.style.backgroundColor = "#63636343";
@@ -72,9 +72,10 @@
 			icon2.style.backgroundColor = "#f5af169d";
 			icon3.style.backgroundColor = "#63636343";
 			icon4.style.backgroundColor = "#63636343";
+			icon0.style.backgroundColor = "#63636343";
 			icon3.style.borderRadius = "50%";
 			icon4.style.borderRadius = "50%";
-			icon5.style.borderRadius = "50%";
+			icon0.style.borderRadius = "50%";
 
 		}
 		else {
@@ -97,7 +98,7 @@
 			icon2.style.backgroundColor = "#63636343";
 			icon3.style.backgroundColor = "#f5af169d";
 			icon4.style.backgroundColor = "#63636343";
-			icon5.style.backgroundColor = "#63636343";
+			icon0.style.backgroundColor = "#63636343";
 			icon4.style.borderRadius = "50%";
 
 			
@@ -122,8 +123,8 @@
 			icon2.style.backgroundColor = "#63636343";
 			icon3.style.backgroundColor = "#63636343";
 			icon4.style.backgroundColor = "#f5af169d";
-			icon5.style.backgroundColor = "#63636343";
-			icon5.style.borderRadius = "50%";
+			icon0.style.backgroundColor = "#63636343";
+			icon0.style.borderRadius = "50%";
 
 
 		}

@@ -14,3 +14,10 @@ body {
 	background-color: #0C1517;
 	overflow-x: hidden;
 }
+
+
+h3 {
+	font-size: 159px;
+	text-align: center;
+	margin-top: 40%;
+}
