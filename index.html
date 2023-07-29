@@ -18,44 +18,48 @@
 
 		<!--/////////-->
 
-		<!--CHECK MENU MOBILE parte 1-->
+		<!--CHECK MENU MOBILE -->
 		<input type="checkbox" name="check-menu" id="check-menu" onclick="riempHead()">
-		<!--/////////-->
-
-		<!-- BOX SEARCH-->
-		<!-- <input type="checkbox" name="check-search" id="check-search"> 
-		<label for="check-search" class="icon-search"> 
-			<i class="fa-solid fa-search"></i>
-		</label>
-		<div class="box-search flex">
-			<input type="text" id="input-search" placeholder="cerca...">
-			<div id="search-resoult"></div> 
-		</div> -->
-		<!--///////// -->
-
-		<!--CHECK MENU MOBILE parte 2-->
 		<label class="box-icon" for="check-menu">
 			<span class="icon-menu"></span>
 		</label>
 		<!--/////////-->
 
-		<!--NAVBAR MENU-->
-		<nav class="navbar flex">
-			<div class="box-icons-navbar flex">
-				<i class="fa-solid fa-user-gear"></i>
-				<i class="fa-solid fa-box"></i>
+		<!--UNDER-MENU MENU-->
+		<div class="under-menu" id="under-menu"> <!--ICONE SOCIAL-->
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/Facebook_Messenger_logo_2020_svg.png?v=1688564525" width="10%" alt="">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/Facebook_Messenger_logo_2020_svg.png?v=1688564525" width="10%" alt="">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/Facebook_Messenger_logo_2020_svg.png?v=1688564525" width="10%" alt="">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/Facebook_Messenger_logo_2020_svg.png?v=1688564525" width="10%" alt="">
+		</div>
+		<!-- MENU A SCOMPARSA  -->
+		<nav class="navbar flex" id="navbar">
+			<div class="box-icons-navbar flex"> <!--icone top menu-->
+				<input type="radio" name="radio-page" id="radio-page1">
+				<label for="radio-page1" id="radio-label1" onclick="openPage1()">
+					<i class="fa-solid fa-user-gear" id="page-icon1"></i>
+				</label>
+				<div id="page1"></div>
+
+				<input type="radio" name="radio-page" id="radio-page2">
+				<label for="radio-page2" id="radio-label2" onclick="openPage2()">
+					<i class="fa-solid fa-user-gear" id="page-icon2"></i>
+				</label>
+				<div id="page2"></div>
+
 				<i class="fa-solid fa-computer"></i>
 				<i class="fa-solid fa-star"></i>
 				<i class="fa-solid fa-gift"></i>
 
 			</div>
-			<ul class="navbar_menu flex">
+			<!-- VOCI MENU MOBILE -->
+			<ul class="navbar_menu flex" id="navbar_menu"> 
 				<li class="menu_items"><a href="#">Pages</a><i class="fa-solid fa-list items-icon"></i></li>
 				<li class="menu_items"><a href="#">About us</a><i class="fa-solid fa-question items-icon"></i></li>
 				<li class="menu_items"><a href="#">Projects</a><i class="fa-solid fa-box items-icon"></i></li>
 				<li class="menu_items"><a href="#">Contact</a><i class="fa-solid fa-phone items-icon"></i></li>
 	
-
+				<!-- SEZIONI SUBMENU MOBILE -->
 				<div class="box-submenu">
 					<fieldset class="set-submenu">
 						<legend class="legend-submenu"><i class="fa-solid fa-list"></i> Indice</legend>

@@ -1,25 +1,46 @@
-window.addEventListener('scroll', function() {
-	document.querySelector('box-icon').style.translateX = "(70px)";
+//* apertura pagine navbar tramite radio
+	var radio1 = document.getElementById("radio-page1");
+	var page1 = document.getElementById("page1");
+	var icon1 = document.getElementById("page-icon1");
+	var ulMenu = document.getElementById("navbar_menu")
 
-  });
-  
+	function openPage1(){
+		if (radio1.checked == true) {
+			page1.style.transform = "translate(0%)";
+			menu.style.transform = "translate(-100%)";
+			page1.style.transition = ".2s ease-in-out";
+		}
+		else {
+			page1.style.transform = "translate(100%)";
+		}
+	}
 
 //* riempimento header	
 	var check = document.getElementById("check-menu");
-	var header = document.querySelector("header");
 	var body = document.querySelector("body");
+	var under = document.getElementById("under-menu");
+	var menu = document.getElementById("navbar");
+	
 
 	function riempHead(){
 		if (check.checked == true) {
-			header.style.transition = "all .25s";
-			header.style.backgroundColor ="#181818";
 			body.style.overflow = "hidden";
-
+			under.style.transform = "translate(0%)";
+			menu.style.transform = "translate(0%)";
+			menu.style.transition = ".4s ease-in-out";
+			under.style.transition = ".4s ease-in-out";
 		}
 		else {
-			header.style.backgroundColor ="transparent";
 			body.style.overflow = "scroll";
+			under.style.transform ="translate(100%)";
+			menu.style.transform = "translate(100%)";
 
+		}
+	}
+
+	function pagesChange() {
+		if(icon1.style.backgroundColor == "#f5af169d"){
+			page1.style.transform = "translate(0%)";
 		}
 	}
 	/********/

@@ -27,77 +27,6 @@
 		z-index: 9;
 		width: auto;
 	}
-	/*SEARCH BOX
-	.header .box-search { /*div input search a scomparsa
-		padding: 10px;
-		width: auto;
-		position: relative;
-		right:7%;
-		transform: translateX(-200%);
-		z-index: 1;
-		margin-left: 30px;
-		justify-content: center;
-		top:-2px;
-		display: none;
-	}
-	.header #search-resoult {
-		color: #fff;
-		padding: 0 20px 10px 20px;
-		display: block;
-		position: absolute;
-		top:28px;
-		width:72%;
-		border-radius: 0 0 20px 20px;
-		background-color: #212121;
-		z-index: 1;
-		box-shadow: 0 0 14px 0 #212121;
-	}
-
-	.header #search-resoult ul {
-		list-style: none;
-	}
-	.header #search-resoult ul li {
-		padding: 10px;	
-	}
-	.header #search-resoult  ul li:nth-child(odd) {
-		color: #c28a21;
-	}
-
-	.header #search-resoult ul li:hover {
-		background-color: #c22121;
-
-	}
-	.header #check-search {
-		display: none;
-	}
-	 .header #check-search:checked ~ .box-search {
-		transform: translateX(0%);
-		transition: .4s ease-in-out;
-	} 
-	.header .box-search #input-search {
-		border-radius: 30px;
-		line-height: 25px;
-		padding: 0 20px;
-		color: #717171;
-		width: 80%;
-		position: relative;
-		top:2px;
-		background-color: #212121;
-		border:none;
-		outline: none;
-		z-index: 2;
-	}
-	.header .icon-search i {
-		color: #bbbbbb;
-		cursor: pointer;
-		margin: 0px 30px;
-		position: absolute;
-		right: 25px;
-		top:3.8vh;
-		z-index: 2;
-		display: none;
-
-	}
 
 	/*NAVBAR MENU*/
 	.header .navbar {
@@ -106,11 +35,42 @@
 		position: fixed;
 		margin-top: -30px;
 		left: 0;
+		top: 0;
 		display: block;
 		width: 100%;
 		height: 100vh;
 		transform: translateX(100%);
 		overflow: scroll;
+	}
+	.header .navbar #page1 {
+		transform: translate(100%);
+		position: absolute;
+		width: 100%;
+		height: 90vh;
+		top: 10vh;
+		background-color: #fff;
+		z-index: 99;
+	}
+	.header .navbar input {
+		display: none;
+	}
+
+
+	.header .under-menu {
+		width: 100%;
+		height: 20vh;
+		transform: translateX(100%);
+		transition: .3s ease-in-out;
+		background-color: #181818;
+		position: absolute;
+		bottom: -6.1vh;
+		left: 0;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		z-index: 3;
+		gap: 7%;
+		margin-left: 30px;
 	}
 	.header .navbar .navbar_menu li {
 		position: relative;
@@ -296,8 +256,6 @@
 	}
 	/* FUNZIONE APERTURA AL CLICK */
 	#check-menu:checked ~ .navbar {
-		transition: .3s ease-in-out;
-		transform: translateX(0);
 		top:4vh;
 	}
 	#check-menu:checked ~ .box-icon .icon-menu::after {
