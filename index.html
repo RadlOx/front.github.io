@@ -36,7 +36,6 @@
 		<nav class="navbar flex" id="navbar">
 			<div class="box-icons-navbar flex"> <!--icone top menu-->
 
-				
 				<i class="fa-solid fa-bars-progress" id="page-icon0" onclick="openPage0()"></i>
 
 				<i class="fa-solid fa-list-check" id="page-icon1" onclick="openPage1()"></i>
@@ -147,29 +146,37 @@
 				<div data-aos="flip-left" data-aos-duration="3000" class="hover-img">
 					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/contact.png?v=1690565515" id="hover-contact" width="100%" alt="">				
 				</div>
-				<div class="video-cont">
-					<video width="100%" autoplay muted loop id="videoId2">
+				<!-- SLIDER PERSONAL TRAINER -->
+				<div class="video-slider" id="slider-pt"> 
+					<!-- <video width="100%" autoplay muted loop id="videoId2">
 						<source src="https://cdn.shopify.com/videos/c/o/v/ba54a035ae55490389674ced8d92551d.mp4" type="video/mp4">
 						Your browser does not support the video tag.
-					</video> 
-					<div id="btn-pt1">
-						<a href="#"></a>
+					</video>  -->
+					<button class="slider-btn" onclick="prec()"><</button>
+					<div class="slider-cont" id="slider-cont">
+						<video width="100%" autoplay muted loop id="video-slider1">
+							<source src="https://cdn.shopify.com/videos/c/o/v/ba54a035ae55490389674ced8d92551d.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video> 
+	
+						<video width="100%" autoplay muted loop id="video-slider2">
+							<source src="https://cdn.shopify.com/videos/c/o/v/b6f435c9701e4a808f881dc2eeb5e090.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video> 
+
+						<video width="100%" autoplay muted loop id="video-slider3">
+							<source src="https://cdn.shopify.com/videos/c/o/v/b6f435c9701e4a808f881dc2eeb5e090.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video> 
 					</div>
+					<button class="slider-btn" onclick="succ()">></button>
 				</div>
+				<!-- FINE SLIDER -->
 				<div class="video-cont">
 					<video width="100%" autoplay muted loop id="videoId3">
 						<source src="https://cdn.shopify.com/videos/c/o/v/bf5d8d611bce4e0cb74357c7c66f43ae.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video> 
-				</div>
-				<div class="video-cont">
-					<video width="100%" autoplay muted loop id="videoId4">
-						<source src="https://cdn.shopify.com/videos/c/o/v/b6f435c9701e4a808f881dc2eeb5e090.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video> 
-					<div id="btn-pt2">
-						<a href="#">scopri</a>
-					</div>
 				</div>
 			</div>
 		</div>

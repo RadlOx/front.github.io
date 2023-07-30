@@ -58,7 +58,7 @@
 
 	.header .under-menu {
 		width: 100%;
-		opacity: .5;
+		opacity: .6;
 		height: 20vh;
 		transform: translateX(100%);
 		transition: .3s ease-in-out;
@@ -70,7 +70,7 @@
 		justify-content: start;
 		align-items: center;
 		z-index: 3;
-		gap: 7%;
+		gap: 6%;
 		margin-left: 30px;
 	}
 	.header .navbar .box-icons-navbar i:hover {
@@ -225,7 +225,7 @@
 		display: none;
 	}
 	.box-icon {
-		padding:30px;
+		padding:30px 20px;
 		margin-top: 12px;
 		cursor: pointer;
 		background-color: #373737aa;
@@ -292,36 +292,36 @@
 		z-index: 2;
 		top: 0;
 	}
-	.main .main-container .video-cont {
+	.main .main-container .video-slider {
 		position: relative;
 	}
-	#btn-pt1  {
-		position: absolute;
+	.main .main-container .video-slider .slider-btn:first-child {
 		top:40%;
-		left: 0;
-		width: 230px;
-		height: 200px;
+		color: #c28a2182;
+		font-size: 89px;
+		background-color: transparent;
+		border:none;		
+		outline: none;
+		z-index: 4;
+		padding: 50px;
+		position: absolute;
 	}
-	#btn-pt2  {
-		position: absolute;
+	.main .main-container .video-slider .slider-btn:last-child {
 		top:40%;
+		color: #ffffff5d;
+		font-size: 89px;
+		background-color: transparent;
+		border:none;		
 		right: 0;
-		width: 230px;
-		height: 200px;
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	#btn-pt2 a {
-		background-color: #464444a2;
-		backdrop-filter: blur(2px);
+		z-index: 4;
+		outline: none;
+		padding: 50px;
 		position: absolute;
-		color:#eaeaea;
-		text-decoration: none;
-		text-transform: uppercase;
-		cursor: pointer;
-		padding:20px 80px;
-		
+	}
+	.video-slider .slider-cont video {
+		display: none;
+	}
+	.main .main-container .video-slider .slider-cont video:nth-child(1) {
+		display: block;
 	}
 }
