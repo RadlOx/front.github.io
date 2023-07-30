@@ -35,7 +35,7 @@
 		position: fixed;
 		margin-top: -30px;
 		left: 0;
-		top: 0;
+		top: 4vh;
 		display: block;
 		width: 100%;
 		height: 100vh;
@@ -45,13 +45,11 @@
 	.header .navbar #page1,#page2,#page3,#page4,#page0 {
 		position: absolute;
 		color: #bbbbbb;
-		padding: 30px;
-		border:1px solid red;
-		
+		padding: 30px;	
 		display: none;
 		width: 100%;
 		height: 70vh;
-		top: 10vh;
+		top: 11vh;
 		background-color: #181818;
 		z-index: 9;
 	}
@@ -75,10 +73,9 @@
 	}
 	.header .navbar .box-icons-navbar i:hover {
 		background-color: #c28a21;
-		box-shadow: 0 0 14px 0 #f5ae16be;
+		box-shadow: 0 0 11px 0 #ffa600a8;
 		color:#ffffffc9;
 	}
-	
 	.header .navbar .navbar_menu {
 		position: absolute;
 		display: block;
@@ -88,6 +85,11 @@
 	.header .navbar .navbar_menu .menu_items {
 		background-color: #181818;
 	}
+	.header .navbar .navbar_menu .menu_items video {
+		border:2px solid #9b6e1a29;
+		border-left:none;
+		border-right:none;
+	}
 	.header .navbar .navbar_menu .menu_items a {
 		display: block;
 		text-decoration: none;
@@ -95,6 +97,7 @@
 		border-bottom: 1px solid #212121;
 		color: #bbbbbb;
 	}
+	/*SUBMENU*/
 	.header .navbar .navbar_submenu .sub-menu_items a {
 		display: block;
 		font-size: 13px;
@@ -112,7 +115,7 @@
 		right: 20px;
 		padding: 0px;
 		font-size: 23px;
-		color: #fff;
+		color: #ffffff49;
 		top:20px;
 	}
 
@@ -127,6 +130,10 @@
 	.header .navbar .navbar_menu li:Hover a{
 		color: #181818;
 	}
+	.header .navbar .navbar_menu li:nth-child(4):hover {
+		background-color: #181818;
+	}
+
 	
 
 	.header .navbar .navbar_menu li .items-icon {
@@ -303,7 +310,7 @@
 		border:none;		
 		outline: none;
 		z-index: 4;
-		padding: 50px;
+		padding: 10px;
 		position: absolute;
 	}
 	.main .main-container .video-slider .slider-btn:last-child {
@@ -315,7 +322,7 @@
 		right: 0;
 		z-index: 4;
 		outline: none;
-		padding: 50px;
+		padding: 10px;
 		position: absolute;
 	}
 	.video-slider .slider-cont video {
