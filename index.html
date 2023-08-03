@@ -3,199 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SITO</title>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="main-style.css">
-	<link rel="stylesheet" href="responsive-mobile.css">
-	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script>
+	<title>PROFUMI</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="respomnsive-mobile.css"> <!--MOBILE CSS-->
+	<link rel="stylesheet" href="main-style.css"> <!--MAIN CSS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS CSS-->
+	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script> <!--FONT AWSOME-->
+	
 </head>
-<body class="body">
-	<!--LOGO-->
-	<a href="#" class="logo">
-		<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/LifeCenter_1.svg?v=1690635254" width="145px" alt="">
-	</a>
-	<header class="header flex">
-
-		<!--/////////-->
-
-		<!--CHECK MENU MOBILE -->
-		<input type="checkbox" name="check-menu" id="check-menu" onclick="riempHead()">
-		<label class="box-icon" for="check-menu">
-			<span class="icon-menu"></span>
-		</label>
-		<!--/////////-->
-
-		<!--UNDER-MENU MENU-->
-		<div class="under-menu" id="under-menu"> <!--ICONE SOCIAL-->
-			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo_messenger.png?v=1690717315" width="12%" alt="">
-			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo_instagram.png?v=1690717315" width="12%" alt="">
-			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo_whatsapp.png?v=1690717314" width="12%" alt="">
-			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo_telegram.png?v=1690717314" width="12%" alt="">
-		</div>
-		<!-- MENU A SCOMPARSA  -->
-		<nav class="navbar flex" id="navbar">
-			<div class="box-icons-navbar flex"> <!--icone top menu-->
-
-				<i class="fa-solid fa-bars-progress" id="page-icon0" onclick="openPage0()"></i>
-
-				<i class="fa-solid fa-list-check" id="page-icon1" onclick="openPage1()"></i>
-				<div id="page1">
-					<h3>1</h3>
-				</div>
-
-				<i class="fa-solid fa-dumbbell" id="page-icon2" onclick="openPage2()"></i>
-				<div id="page2">
-					<h3>2</h3>
-				</div>
-
-				<i class="fa-solid fa-medal" id="page-icon3" onclick="openPage3()"></i>
-				<div id="page3">
-					<h3>3</h3>
-				</div>
-
-				<i class="fa-solid fa-user-gear" id="page-icon4" onclick="openPage4()"></i>
-				<div id="page4">
-					<h3>4</h3>
-				</div>
-
-			</div>
-			<!-- VOCI MENU MOBILE -->
-			<ul class="navbar_menu flex" id="navbar_menu"> 
-				<li class="menu_items"><a href="#"><i class="fa-solid fa-money-check-dollar"></i>Il tuo abbonamento</a></li>
-
-				
-				<li class="menu_items"><a href="#"><i class="fa-solid fa-handshake-simple"></i>Il tuo Coach </a></li>
-								
-				<li class="menu_items"><a href="#"><i class="fa-solid fa-stopwatch-20"></i>Corsi & Attività</a></li>
-
-				<li class="menu_items">
-					<video width="100%" autoplay muted loop id="video-navbar1">
-						<source src="https://cdn.shopify.com/videos/c/o/v/f45129d986994ff8b68e6dd801f6b82e.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video> 		
+<body>
+	<!-- HEADER -->
+	<header class="header"> <!--div princ. header-->
+		<a href="#"><i class="fa-solid fa-crown"> </i>LOGO</a> <!--logo-->
+		<nav class="navbar"> <!--nav cont. menu-->
+			<!--menu header-->
+			<ul class="navmenu">
+				 <!--voci menu >> btn page-->
+				<li class="nav-item" id="nav-item1">
+					<a href="#slide-main1" class="nav-anchor" id="anchor1">oo</a>
 				</li>
 
+				<li class="nav-item" id="nav-item2">
+					<a href="#slide-main2" class="nav-anchor" id="anchor2">oo</a>
+				</li>
 
-				<!-- SEZIONI SUBMENU MOBILE -->
-				<div class="box-submenu">
-					<fieldset class="set-submenu">
-						<legend class="legend-submenu"><i class="fa-solid fa-list"></i> Indice</legend>
-						<ul class="navbar_submenu flex">
-							<div class="left">
-	
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Palestre</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Corsi</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> PT - SP</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Contact</a></li>
-						
-							</div>
-							<div class="center">
-								
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Pages</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> About</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Projects</a></li>
-								<li class="sub-menu_items"><a href="#"><i class="fa-solid fa-folder sub-icon"></i> Contact</a></li>
-						
-							</div>
-							<div class="right">
-								
-								<li class="sub-menu_items">
-									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> Pages</a>
-								</li>
-								<li class="sub-menu_items">
-									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> About</a>
-								</li>
-								<li class="sub-menu_items">
-									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> Projects</a>
-								</li>
-								<li class="sub-menu_items">
-									<a href="#"><i class="fa-solid fa-folder sub-icon"></i> Contact</a>
-								</li>
-						
-							</div>
-						</ul>
-					</fieldset>
-				</div>
-				<div class="banner">
-					<img src="ì" width="100%" class="sub-banner" alt="">
-				</div>
+				<li class="nav-item" id="nav-item3">
+					<a href="#slide-main3" class="nav-anchor" id="anchor3">oo</a>
+				</li>
+
+				<li class="nav-item" id="nav-item4">
+					<a href="#slide-main4" class="nav-anchor" id="anchor4">oo</a>
+				</li>
+				 <!--fine voci menu >> btn page-->
 			</ul>
-
+			<!--fine menu header-->
 		</nav>
-		<!--/////////-->
 	</header>
+	<!-- FINE <HEADER> -->
 	<div class="main">
-		<div class="main-container">
-			<div class="main-content">
-				<video width="100%" autoplay muted loop id="videoId1">
-					<source src="https://cdn.shopify.com/videos/c/o/v/ea9c28064c324f4790f686d3a00cb452.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video> 
-				<a href="#" class="btn-pt"></a>
-
-				<div data-aos="zoom-in" data-aos-duration="2000" class="hover-img">
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/PARAGRAFO.png?v=1690562290" id="hover-parag" width="100%" alt="">				
-				</div>
-
-				<div data-aos="fade-right" data-aos-duration="500" class="hover-img">
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/5.png?v=1690562289" id="hover-offert" width="100%" alt="">				
-				</div>
-
-				<div data-aos="fade-left" data-aos-duration="1000" class="hover-img">
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/4_9cc93063-5a08-445d-8c32-58a94fdba12d.png?v=1690562290" id="hover-offert1" width="100%" alt="">				
-				</div>
-
-				<div data-aos="fade-left" data-aos-duration="2000" class="hover-img">
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/3_5ebfb0e9-b9f1-4afd-94d9-391322d3d063.png?v=1690562290" id="hover-offert2" width="100%" alt="">				
-				</div>
-
-				<div data-aos="fade-left" data-aos-duration="3000" class="hover-img">
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/3_it_1.png?v=1690565519" id="hover-offert2" width="100%" alt="">				
-				</div>
-
-				<div data-aos="flip-left" data-aos-duration="3000" class="hover-img">
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/contact.png?v=1690565515" id="hover-contact" width="100%" alt="">				
-				</div>
-				<!-- SLIDER PERSONAL TRAINER -->
-				<div class="video-slider" id="slider-pt"> 
-					<!-- <video width="100%" autoplay muted loop id="videoId2">
-						<source src="https://cdn.shopify.com/videos/c/o/v/ba54a035ae55490389674ced8d92551d.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>  -->
-					<button class="slider-btn" data-aos="zoom-in" data-aos-duration="2000" onclick="prec()"><</button>
-					<div class="slider-cont" id="slider-cont">
-						<video width="100%" autoplay muted loop id="video-slider1">
-							<source src="https://cdn.shopify.com/videos/c/o/v/ba54a035ae55490389674ced8d92551d.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video> 
-	
-						<video width="100%" autoplay muted loop id="video-slider2">
-							<source src="https://cdn.shopify.com/videos/c/o/v/b6f435c9701e4a808f881dc2eeb5e090.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video> 
-
-						<video width="100%" autoplay muted loop id="video-slider3">
-							<source src="https://cdn.shopify.com/videos/c/o/v/b6f435c9701e4a808f881dc2eeb5e090.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video> 
-					</div>
-					<button class="slider-btn" data-aos="zoom-in" data-aos-duration="2000" onclick="succ()">></button>
-				</div>
-				<!-- FINE SLIDER -->
-				<div class="video-cont">
-					<video width="100%" autoplay muted loop id="videoId3">
-						<source src="https://cdn.shopify.com/videos/c/o/v/bf5d8d611bce4e0cb74357c7c66f43ae.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video> 
-				</div>
-			</div>
+		<div class="slider-main">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/summer.png?v=1690561074" id="slide-main1" width="100%" alt="">
 		</div>
-	</div>
-
-	<script src="script-menu-mobile.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+		<div class="slider-main 2">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/1_c82e56ef-6bf6-4421-9799-7eda01512337.png?v=1690554772" id="slide-main2" width="100%" alt="">
+		</div>
+			
+		<div class="slider-main" id="slider-3">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/2_493c0381-298f-4c60-8d77-0aa72d5c73bd.png?v=1690554775" id="slide-main3" width="100%" alt="">
+		</div>
+		<div class="slider-main">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/summer.png?v=1690561074" id="slide-main4" width="100%" alt="">
+		</div>
+	</div>	
 </body>
 </html>

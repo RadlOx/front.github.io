@@ -1,0 +1,55 @@
+@media (max-width:698px){
+
+	.header {
+		position: fixed;
+		top: 0;
+		left:0;
+		width: 100%;
+		border:1px solid red;
+	}
+	.navbar {
+		border:1px solid red;
+		position: fixed;
+		right: -10px;
+		top: 30%;
+	
+	}
+	.navmenu {
+		list-style: none;
+	}
+	
+	.nav-item {
+		margin: 40px;
+	}
+	.nav-anchor {
+		background-color: #cdcdcd;
+		border: none;
+		border-radius: 50%;
+		width: 15px;
+		height: 15px;
+		color: transparent;
+		z-index: 9;
+	}
+
+	.nav-icon {
+		display: none;
+	}
+	
+	/*MAIN CODE*/
+	
+	.main {
+		width: 100%;
+		height: 100vh;
+	}
+	.slider-main {
+		z-index: 0;
+		transform: translate(0);
+		transition: .4s ease;
+	}
+	.slider-main img {
+		margin-top:-6px;
+	}
+
+
+} 
+
