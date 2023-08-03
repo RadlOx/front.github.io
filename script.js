@@ -1,8 +1,13 @@
-var vid = document.getElementById("slide-main1");
-var vid = document.getElementById("slide-main2");
-var vid = document.getElementById("slide-main3");
-var vid = document.getElementById("slide-main4");
+	  
+if(video.muted){
+	video.muted = false;
+} else {
+	debugger;
+	video.muted = true;
+	video.play()
+  }
+		
 
-vid.autoplay = true;
-vid.load();
+		
+  
 
