@@ -24,6 +24,8 @@
 		border-radius: 7px;
 		box-shadow: 0 0 10px 2px #1c161637;
 		padding: 15px;
+		background-color: #7b16b51b;
+		backdrop-filter: blur(3px);
 		margin-top: 20px;
 		margin-left: 10px;
 		display: flex;
@@ -32,7 +34,9 @@
 
 	.center-div {
 		display:flex;
+		margin-right: auto;
 	}
+
 	.box-icon-menu {
 		display: flex;
 		align-items: center;
@@ -85,23 +89,34 @@
 	}
 	#container {
 		user-select: none;
-		background-color: #e5ac39;
+		background-color: #efefef;
 		width: 90%;
-		border-radius: 50px 50px;
-		height: 55vh;
+		border-radius: 50px;
+		height: 45vh;
+		box-shadow: 0 0 10px 0 #cdcdcda9;
 		position: relative;
 		top:20vh;
 		z-index: 9;
 	}
-	#container2 {
-		background-color: #e9e9e9;
-		border-radius: 10px;
+	.title-container {
+		border-left: 5px groove #a76bdc5d;
+		border-right: 5px groove #a76bdc5d;
+		border-radius: 50px;
 		width: 90%;
-		height: 40vh;
+		text-align: center;
+		padding: 5%;
+		margin:10px 20px;
+	}
+	#container2 {
+		background-color: #efefef;
+		border-radius: 50px;
+		box-shadow: 0 0 10px 0 #cdcdcda9;
+		width: 50%;
+		height: 30vh;
 		z-index: 9;
-		bottom:-80vh;
+		bottom:-30vh;
 		position: absolute;
-		margin-top: 100px;
+		right: 20px;
 	}
 	 #check-menu:checked ~ #container-menu {
 		transition: .4s ease-in-out;
