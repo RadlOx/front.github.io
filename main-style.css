@@ -11,9 +11,10 @@ body {
 }
 html {
 	overflow-x: hidden;
-
 }
-
+::placeholder {
+	opacity: .3;
+}
 .scroll-down {
 	background: #000;
 }

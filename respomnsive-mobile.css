@@ -21,16 +21,22 @@
 		color: #e5ac39;
 	}
 	.social-box {
-		border-radius: 7px;
 		box-shadow: 0 0 10px 2px #1c161637;
 		padding: 15px;
 		background-color: #7b16b51b;
 		backdrop-filter: blur(3px);
 		margin-top: 20px;
-		margin-left: 10px;
+		margin-left: 0px;
 		display: flex;
 		color: #e5ac39;
 	}
+	#box1 {
+		border-radius: 50px 0 0 50px;
+	}
+	#box3 {
+		border-radius: 0 50px 50px 0;
+	}
+
 
 	.center-div {
 		display:flex;
@@ -88,7 +94,6 @@
 
 	}
 	#container {
-		user-select: none;
 		background-color: #efefef;
 		width: 90%;
 		border-radius: 50px;
@@ -98,25 +103,131 @@
 		top:20vh;
 		z-index: 9;
 	}
-	.title-container {
-		border-left: 5px groove #a76bdc5d;
-		border-right: 5px groove #a76bdc5d;
-		border-radius: 50px;
-		width: 90%;
-		text-align: center;
-		padding: 5%;
-		margin:10px 20px;
+	#form-1 {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding-top: 30px;
 	}
-	#container2 {
-		background-color: #efefef;
+	/*INPUT CODE*/
+	.input-box {
+
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.btn-box {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		align-items: center;
+	}
+	.btn-box p {
+		font-size: 13px;
+		color: #77747657;
+	}
+
+	.input {
+		border: none;
+		outline: none;
+		margin:auto;
+		line-height: 40px;
+		width: 90%;
 		border-radius: 50px;
+		position: relative;
+		padding-left: 13%;
+		color: #a76bdca0;
+	}
+
+	.input-icon {
+		position: absolute;
+		left:10%;
+		font-size: 18px;
+		opacity: .35;
+		color: #8041b7;
+	}
+	#name:visited .input-icon {
+		opacity: .8;
+	}
+	.icon-checkName {
+		position: absolute;
+		right: 40px;
+		opacity: .1;
+	}
+	.icon-showpsw {
+		position: absolute;
+		right: 40px;
+		opacity: .1;
+	}
+	.check-psw {
+		display: flex;
+		gap: 10px;
+		justify-content: end;
+		margin-right: 20px;
+		align-items: center;
+	}
+	#psw-status {
+		font-size: 11px;
+		color: #7a055157;
+		margin-right: 10px;
+	}
+	.checker {
+		width: 60px;
+		height: 5px;
+		border-radius: 50px;
+		background-color: #fff;
+	}
+	.easy {
+		background-color: red;
+	}
+	.mid {
+		background-color: orange;
+	}
+	.hard {
+		background-color: greenyellow;
+	}
+	#btnCrea {
+		background-color: #aa8fd5;
+		padding: 15px 18px;
+		border-radius: 50px;
+		position: relative;
+		color: #efefef;
+		text-decoration: none;
+	}
+	#btnLogin {
+		background-color: #e5ac39;
+		border:none;
+		padding: 15px 18px;
+		border-radius: 50px;
+		position: relative;
+		color: #efefef;
+		text-decoration: none;
+	}
+	.create-icon {
+		margin-right: 4px;
+	}
+	/**/
+	#container2 {
+		background-color: #8041b7;
+		border-radius: 50px 0 0 50px;
 		box-shadow: 0 0 10px 0 #cdcdcda9;
 		width: 50%;
-		height: 30vh;
+		height: 20vh;
 		z-index: 9;
-		bottom:-30vh;
+		top:110vh;
 		position: absolute;
-		right: 20px;
+		right: 0px;
+	}
+	#container3 {
+		background-color: #8041b7;
+		border-radius:0 50px 50px 0;
+		box-shadow: 0 0 10px 0 #cdcdcda9;
+		width: 50%;
+		height: 20vh;
+		z-index: 9;
+		top:130vh;
+		position: absolute;
+		left: 0px;
 	}
 	 #check-menu:checked ~ #container-menu {
 		transition: .4s ease-in-out;
@@ -144,9 +255,10 @@
 	}
 
 	#container-menu i {
-		color: #e5ac39;
+		color: #dcdcdc;
 		opacity: .8;
 	}
+	
 }	
 
 

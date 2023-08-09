@@ -22,3 +22,13 @@ function toggleMute() {
 // 	}
 //   } )
 
+function validate() {
+	var inputName = document.getElementById("password").value;
+	var checker = document.querySelector(".checker");
+
+	if(inputName.value == "") {
+		return false;
+	}
+	return true;
+}
+

@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PROFUMI</title>
-	<script src="script.js"></script>
 	<link rel="stylesheet" href="respomnsive-mobile.css"> <!--MOBILE CSS-->
 	<link rel="stylesheet" href="main-style.css"> <!--MAIN CSS-->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS CSS-->
@@ -17,6 +16,7 @@
 		<div class="logo-box">
 			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo-menu.png?v=1691441820" width="50%" alt="">
 		</div>	
+		<!-- DIV CENTRALE SOCIAL -->
 		<div class="center-div">
 			<div class="social-box" id="box1">
 				<i class="fa-brands fa-facebook"></i> 
@@ -30,13 +30,14 @@
 				<i class="fa-brands fa-instagram"></i> 
 			</div>
 		</div>
-
+		<!-- INPUT APERTURA MENU LAT. -->
 		<input type="checkbox" name="menu-check" id="check-menu">
 		<label for="check-menu">
 			<div class="box-icon-menu" >
 				<span class="bar-icon"></span>
 			</div>
 		</label>
+		<!-- MENU LAT. -->
 		<div class="container-menu" id="container-menu">
 			<i class="fa-solid fa-user-gear"></i>
 			<i class="fa-solid fa-list"></i>
@@ -44,19 +45,73 @@
 			<i class="fa-solid fa-message"></i>
 		</div>
 	</header>
-	<!-- FINE <HEADER> -->
-	<div class="under" id="under-bgc">
-		<video src="https://cdn.shopify.com/videos/c/o/v/cba7967e53f14a8490bb97bd49317764.mp4" width="100%" autoplay loop muted></video>
-		<video src="https://cdn.shopify.com/videos/c/o/v/54149ec5bac74eca80c84b5544fbdc8b.mp4" width="100%" autoplay loop muted></video>
-	</div>
-	<div class="main">
 
+	<!-- MAIN CODE -->
+	<div class="main">
+		<!-- ELEMENTO DI SFONDO  -->
+		<div class="under" id="under-bgc">
+			<!-- VIDEO DI SFONDO -->
+			<video src="https://cdn.shopify.com/videos/c/o/v/cba7967e53f14a8490bb97bd49317764.mp4" width="100%" autoplay loop muted></video> 
+			<video src="https://cdn.shopify.com/videos/c/o/v/54149ec5bac74eca80c84b5544fbdc8b.mp4" width="100%" autoplay loop muted></video>
+		</div>
+		<!-- DIV PRINCIPALE -->
 		<div id="container">
-			<h2 class="title-container">GO TO THE MOON</h2>
+			<!-- FORM SING-UP -->
+			<form id="form-1" action="submit.html" onsubmit="return validate()">
+
+				<div class="input-box" id="input-name">
+					<input type="text" name="name" class="input" id="name" placeholder="Inserisci il tuo nome">
+					<i class="fa-solid fa-user input-icon"></i>
+					<i class="fa-solid fa-check icon-checkName"></i>
+
+				</div>
+
+				<div class="input-box">
+					<input type="email" name="email" class="input" id="email" placeholder="Inserisci la tua email">
+					<i class="fa-solid fa-envelope input-icon"></i>
+				</div>
+				
+				<div class="input-box">
+					<input type="password" name="password" class="input" id="password" placeholder="Inserisci la password">
+					<i class="fa-solid fa-key input-icon"></i>
+					<i class="fa-solid fa-eye icon-showpsw"></i>
+				</div>
+				<div class="check-psw">
+					<p id="psw-status">password debole </p>
+					<div class="checker "></div>
+					<div class="checker "></div>
+					<div class="checker "></div>
+				</div>
+				<div class="input-box">
+					<input type="password" name="conf-password" class="input" id="conf-password" placeholder="Conferma password">
+					<i class="fa-solid fa-key input-icon"></i>
+					<i class="fa-solid fa-eye icon-showpsw"></i>
+				</div>
+				
+				<div class="btn-box">
+					<a href="#" id="btnCrea">
+						<i class="fa-solid fa-plus create-icon"></i>
+					Crea account</a>
+					<p>oppure</p>
+					<button type="submit" id="btnLogin" >
+						<i class="fa-solid fa-unlock create-icon"></i>
+						Accedi</button>
+				</div>
+
+				
+			</form>
 		</div>
-		<div id="container2">
-			<h2 class="title-container">VALORI</h2>
+		<div id="container2" data-aos="fade-left">
 		</div>
-	</div>		
+		<div id="container3" data-aos="fade-right">
+		</div>
+	</div>	
+
+
+	<script src="script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+    </script>
 </body>
 </html>
