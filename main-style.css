@@ -9,15 +9,17 @@ body {
 	overflow-x: hidden;
 	background-color: #e7e7e7;
 }
-html {
-	overflow-x: hidden;
+.show {
+	display: block;
 }
+
 ::placeholder {
 	opacity: .3;
 }
 .scroll-down {
 	background: #000;
 }
-#check-menu {
+#check-menu,
+#check-login {
 	display: none;
 }

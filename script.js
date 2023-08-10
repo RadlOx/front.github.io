@@ -32,3 +32,18 @@ function validate() {
 	return true;
 }
 
+
+function openLogin() {
+	var menuLogin = document.getElementById("container-login");
+
+	menuLogin.style.display = "block";
+
+
+}
+
+function close() {
+	var menuLogin = document.getElementById("container-login");
+	var check = document.getElementById("check-login");
+
+	menuLogin.style.display ="none";
+}
