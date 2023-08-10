@@ -129,13 +129,13 @@
 	}
 	#container-login {
 		background-color: #efefef;
-		width: 51.1vb;
-		right: 3vb;
+		width: 90%;
+		right: auto;
 		border-radius: 50px 10.5px 50px 50px;
-		height: 45vh;
+		height: 85vh;
+		top: 40vh;
 		box-shadow: 0 0 10px 0 #cdcdcda9;
 		position: absolute;
-		top:47vh;
 		z-index: 99;
 		display: none;
 	}
