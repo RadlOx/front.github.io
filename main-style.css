@@ -3,14 +3,21 @@
 	margin: 0;
 	box-sizing: border-box;
 	z-index: 1;
+	user-select: none;
 	font-family: sans-serif;
 }
 body {
 	overflow-x: hidden;
 	background-color: #e7e7e7;
 }
+html {
+	overflow-x: hidden;
+}
 .show {
 	display: block;
+}
+.colors {
+	color: #000;
 }
 
 ::placeholder {
@@ -20,6 +27,7 @@ body {
 	background: #000;
 }
 #check-menu,
-#check-login {
+
+#check2 {
 	display: none;
 }

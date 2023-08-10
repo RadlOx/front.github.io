@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROFUMI</title>
+	<title>ROCKET-X</title>
 	<link rel="stylesheet" href="respomnsive-mobile.css"> <!--MOBILE CSS-->
 	<link rel="stylesheet" href="main-style.css"> <!--MAIN CSS-->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS CSS-->
@@ -38,12 +38,20 @@
 			</div>
 		</label>
 		<!-- MENU LAT. -->
+		
 		<div class="container-menu" id="container-menu">
-			<i class="fa-solid fa-user-gear" onclick="openLogin()"></i>
+			
+			<label for="check1" onclick="changeColor()" >
+				<i class="fa-solid fa-user-gear colors" id="login-icon" ></i>
+			</label>
+
 			<i class="fa-solid fa-list"></i>
-			<i class="fa-solid fa-check"></i>
+
+
 			<i class="fa-solid fa-message"></i>
+
 		</div>
+
 	</header>
 
 	<!-- MAIN CODE -->
@@ -55,10 +63,12 @@
 			<video src="https://cdn.shopify.com/videos/c/o/v/54149ec5bac74eca80c84b5544fbdc8b.mp4" width="100%" autoplay loop muted></video>
 		</div>
 		<!-- DIV PRINCIPALE -->
+		<input type="checkbox" name="check" id="check1">
+
 		<div id="container-login">
-			<i class="fa-solid fa-x close" onclick="close()"></i>
+			<i class="fa-solid fa-question close" onclick="close()"></i>
 			<!-- FORM SING-UP -->
-			<form id="form-1" action="submit.html" onsubmit="return validate()">
+			<form id="form-1" method="post" action="submit.html" onsubmit="return validate()">
 				<div class="input-box" id="input-name">
 					<input type="text" name="name" class="input" id="name" placeholder="Inserisci il tuo nome">
 					<i class="fa-solid fa-user input-icon"></i>
@@ -101,11 +111,10 @@
 				
 			</form>
 		</div>
-
+		
 		<div id="container-home">
 
 		</div>
-
 
 	</div>	
 

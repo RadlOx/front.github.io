@@ -1,4 +1,4 @@
-	// SCRIPT AUTOPLAY VIDEO  
+// SCRIPT AUTOPLAY VIDEO  
 function toggleMute() {
 		
 	var video = document.getElementById("")
@@ -32,18 +32,8 @@ function validate() {
 	return true;
 }
 
+function changeColor(){
+	var icon = document.getElementById("login-icon");
 
-function openLogin() {
-	var menuLogin = document.getElementById("container-login");
-
-	menuLogin.style.display = "block";
-
-
-}
-
-function close() {
-	var menuLogin = document.getElementById("container-login");
-	var check = document.getElementById("check-login");
-
-	menuLogin.style.display ="none";
+	icon.classList.toggle("colors");
 }

@@ -97,7 +97,7 @@
 		align-items: center;
 		gap: 30px;
 		padding: 25px;
-		transform: translateY(180%);
+		transform: translateX(110%);
 		box-shadow: -3px 0 14px 0 #a76bdc5d;
 		transition: .4s ease-in-out;
 	}
@@ -107,6 +107,7 @@
 		opacity: .8;
 		overflow-x: hidden;
 	}
+	
 
 	/*MAIN CODE*/
 	
@@ -128,14 +129,18 @@
 	}
 	#container-login {
 		background-color: #efefef;
-		width: 90%;
-		border-radius: 50px;
+		width: 51.1vb;
+		right: 3vb;
+		border-radius: 50px 10.5px 50px 50px;
 		height: 45vh;
 		box-shadow: 0 0 10px 0 #cdcdcda9;
 		position: absolute;
-		bottom:2vh;
+		top:47vh;
 		z-index: 99;
 		display: none;
+	}
+	#check1:checked ~ #container-login {
+		display: block;
 	}
 	.close{
 		position: absolute;
@@ -145,9 +150,8 @@
 		color: #fff;
 		font-size: 12px;
 		background-color: #a76bdc;
-		padding:8px 9px;
-		border-radius: 50px;
-
+		padding:8px 10px 8px 12px;
+		border-radius: 0 20px 0 50px;
 	}
 	#container-home {
 		background-color: #efefef;
@@ -155,8 +159,8 @@
 		border-radius: 50px;
 		height: 45vh;
 		box-shadow: 0 0 10px 0 #cdcdcda9;
-		position: relative;
-		top:20vh;
+		position: absolute;
+		bottom:8vh;
 		z-index: 9;
 	}
 	#form-1 {
@@ -268,29 +272,6 @@
 		width: 100%;
 		max-width: 100%;
 	}
-	#container2 {
-		background-color: #8041b7;
-		border-radius: 50px 0 0 50px;
-		box-shadow: 0 0 10px 0 #cdcdcda9;
-		width: 50%;
-		height: 20vh;
-		z-index: 9;
-		top:110vh;
-		position: absolute;
-		right: 0px;
-	}
-	#container3 {
-		background-color: #8041b7;
-		border-radius:0 50px 50px 0;
-		box-shadow: 0 0 10px 0 #cdcdcda9;
-		width: 50%;
-		height: 20vh;
-		z-index: 9;
-		top:130vh;
-		position: absolute;
-		left: 0px;
-	}
-	
 }	
 
 
