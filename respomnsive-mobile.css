@@ -133,7 +133,7 @@
 		right: auto;
 		border-radius: 50px 10.5px 50px 50px;
 		height: 85vh;
-		top: 40vh;
+		top: 47%;
 		box-shadow: 0 0 10px 0 #cdcdcda9;
 		position: absolute;
 		z-index: 99;
@@ -157,11 +157,31 @@
 		background-color: #efefef;
 		width: 90%;
 		border-radius: 50px;
-		height: 45vh;
+		height: 500px;
 		box-shadow: 0 0 10px 0 #cdcdcda9;
 		position: absolute;
-		bottom:8vh;
+		top:47%;
 		z-index: 9;
+	}
+	#name-desc {
+		font-size:10px;
+		color: #160c1f4c;
+		text-align: center;
+	}
+	.head-home {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+		align-items: center;
+	}
+	#search {
+		width: 60%;
+		margin: 10px 20px;
+		border-radius: 50px;
+		outline: none;
+		line-height: 20px;
+		padding:5px 20px;
+		border:none;
 	}
 	#form-1 {
 		display: flex;
