@@ -154,7 +154,7 @@
 		border-radius: 0 20px 0 50px;
 	}
 	#container-home {
-		background-color: #efefef;
+		background-color: #eaeaea;
 		width: 90%;
 		border-radius: 50px;
 		height: 500px;
@@ -174,14 +174,26 @@
 		padding: 0;
 		align-items: center;
 	}
+	#bar-header {
+		position: absolute;
+		border-radius: 50px 50px 0 0 ;
+	}
 	#search {
-		width: 60%;
+		position: relative;
+		left: 20px;
+		top: -4px;
+		width: 40%;
 		margin: 10px 20px;
 		border-radius: 50px;
 		outline: none;
-		line-height: 20px;
+		line-height: 10px;
 		padding:5px 20px;
 		border:none;
+	}
+	#filtri {
+		font-size: 14px;
+		position: relative;
+		right: 18px;
 	}
 	#form-1 {
 		display: flex;
