@@ -19,16 +19,9 @@
 		<!-- DIV CENTRALE SOCIAL -->
 		<div class="center-div">
 			<div class="social-box" id="box1">
-				<i class="fa-brands fa-facebook"></i> 
+				<i class="fa-solid fa-wallet"></i> <a href="#">Connect wallet</a>
 			</div>
 
-			<div class="social-box" id="box2">
-				<i class="fa-brands fa-whatsapp"></i> 
-			</div>
-
-			<div class="social-box" id="box3">
-				<i class="fa-brands fa-instagram"></i> 
-			</div>
 		</div>
 		<!-- INPUT APERTURA MENU LAT. -->
 		<input type="checkbox" name="menu-check" id="check-menu">
@@ -41,7 +34,7 @@
 		
 		<div class="container-menu" id="container-menu">
 			
-			<label for="check1" onclick="changeColor()" >
+			<label for="check-login">
 				<i class="fa-solid fa-user-gear colors" id="login-icon" ></i>
 			</label>
 
@@ -59,15 +52,15 @@
 		<!-- ELEMENTO DI SFONDO  -->
 		<div class="under" id="under-bgc">
 			<!-- VIDEO DI SFONDO -->
-			<video src="https://cdn.shopify.com/videos/c/o/v/cba7967e53f14a8490bb97bd49317764.mp4" width="100%" autoplay loop muted></video> 
+			<video src="https://cdn.shopify.com/videos/c/o/v/cba7967e53f14a8490bb97bd49317764.mp4" width="100%" autoplay loop muted id="first-video"></video> 
 			<video src="https://cdn.shopify.com/videos/c/o/v/54149ec5bac74eca80c84b5544fbdc8b.mp4" width="100%" autoplay loop muted></video>
 		</div>
 		<!-- DIV PRINCIPALE -->
-		<input type="checkbox" name="check" id="check1">
+		<input type="checkbox" name="check" id="check-login">
 
 		<div id="container-login">
-			<i class="fa-solid fa-question close" onclick="close()"></i>
 			<!-- FORM SING-UP -->
+			<i class="fa-solid fa-question close"></i>
 			<form id="form-1" method="post" action="submit.html" onsubmit="return validate()">
 				<div class="input-box" id="input-name">
 					<input type="text" name="name" class="input" id="name" placeholder="Nome">
@@ -113,26 +106,30 @@
 				
 			</form>
 		</div>
-		
+		<!--  CONTAINER HOMEPAGE -->
 		<div id="container-home">
 			<div class="head-home">
-				
-				<input type="search" name="search" id="search">
-				<SPAN id="filtri">FILTRI <i class="fa-solid fa-caret-down"></i></SPAN>
+				<!-- SEARCH & FILTRI -->
+				<!-- <input type="search" name="search" id="search"> 
+				<SPAN id="filtri">FILTRI <i class="fa-solid fa-caret-down"></i></SPAN> -->
 			</div>
+	
+			<!-- TITOLO SOPRA CARD -->
 			<div class="top-box">
+				<i class="fa-solid fa-trophy"></i>
+				
 				<h4>TOP RANKING</h4>
 			</div>
 			<!-- CARD HOME -->
 			<div class="container-card">
 				<!-- CARD 1 -->
-				<div class="wrap-card">
-					<div class="card">
-						<div class="img-box-card">
+				<div class="wrap-card"> <!--MARGIN CARD-->
+					<div class="card"> <!--CARD GENERAL-->
+						<div class="img-box-card"> <!--IMG BOX CARD-->
 							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
 						</div>
-						<div class="content-card">
-							<div class="top-content-card">
+						<div class="content-card"> <!--CONTENUTO CARD-->
+							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
 								<h6 id="owner-card">Di:
 									<span class="card-span"><a href="#">SuCunnu00</a></span>
 								</h6>
@@ -143,7 +140,7 @@
 								<i class="fa-solid fa-heart heart-nft"></i>
 								<i class="fa-solid fa-eye eye-nft"></i>
 							</div>
-							<div class="mid-content-card">
+							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
 								
 								<h6 id="address-card">Address:
 									<span class="card-span"><a href="#">rh374ho223r2h...</a></span>
@@ -151,25 +148,25 @@
 								<i class="fa-solid fa-check"></i>
 								<i class="fa-solid fa-award"></i>
 							</div>
-							<div class="bottom-content-card">
+							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
 							 	<span class="price-card">
 									<i class="fa-brands fa-ethereum"></i>
 									0,342 eth
 									<i class="fa-solid fa-shopping-cart"></i>
 								</span>
 							</div>
-						</div>
-					</div>
-				</div>
+						</div> <!--FINE CONTENT-CARD-->
+					</div> <!--FINE CARD-->
+				</div> <!--FINE WRAP-CARD-->
 
 				<!-- CARD 2 -->
-				<div class="wrap-card">
-					<div class="card">
-						<div class="img-box-card">
+				<div class="wrap-card"> <!--MARGIN CARD-->
+					<div class="card"> <!--CARD GENERAL-->
+						<div class="img-box-card"> <!--IMG BOX CARD-->
 							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
 						</div>
-						<div class="content-card">
-							<div class="top-content-card">
+						<div class="content-card"> <!--CONTENUTO CARD-->
+							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
 								<h6 id="owner-card">Di:
 									<span class="card-span"><a href="#">SuCunnu00</a></span>
 								</h6>
@@ -180,7 +177,7 @@
 								<i class="fa-solid fa-heart heart-nft"></i>
 								<i class="fa-solid fa-eye eye-nft"></i>
 							</div>
-							<div class="mid-content-card">
+							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
 								
 								<h6 id="address-card">Address:
 									<span class="card-span"><a href="#">rh374ho223r2h...</a></span>
@@ -188,26 +185,25 @@
 								<i class="fa-solid fa-check"></i>
 								<i class="fa-solid fa-award"></i>
 							</div>
-							<div class="bottom-content-card">
+							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
 							 	<span class="price-card">
 									<i class="fa-brands fa-ethereum"></i>
 									0,342 eth
 									<i class="fa-solid fa-shopping-cart"></i>
 								</span>
 							</div>
-						</div>
-					</div>
-				</div>
-
+						</div> <!--FINE CONTENT-CARD-->
+					</div> <!--FINE CARD-->
+				</div> <!--FINE WRAP-CARD-->
 
 				<!-- CARD 3 -->
-				<div class="wrap-card">
-					<div class="card">
-						<div class="img-box-card">
+				<div class="wrap-card"> <!--MARGIN CARD-->
+					<div class="card"> <!--CARD GENERAL-->
+						<div class="img-box-card"> <!--IMG BOX CARD-->
 							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
 						</div>
-						<div class="content-card">
-							<div class="top-content-card">
+						<div class="content-card"> <!--CONTENUTO CARD-->
+							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
 								<h6 id="owner-card">Di:
 									<span class="card-span"><a href="#">SuCunnu00</a></span>
 								</h6>
@@ -218,7 +214,7 @@
 								<i class="fa-solid fa-heart heart-nft"></i>
 								<i class="fa-solid fa-eye eye-nft"></i>
 							</div>
-							<div class="mid-content-card">
+							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
 								
 								<h6 id="address-card">Address:
 									<span class="card-span"><a href="#">rh374ho223r2h...</a></span>
@@ -226,20 +222,122 @@
 								<i class="fa-solid fa-check"></i>
 								<i class="fa-solid fa-award"></i>
 							</div>
-							<div class="bottom-content-card">
+							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
 							 	<span class="price-card">
 									<i class="fa-brands fa-ethereum"></i>
-									30,342 eth
+									0,342 eth
 									<i class="fa-solid fa-shopping-cart"></i>
 								</span>
 							</div>
-						</div>
-					</div>
-				</div>
+						</div> <!--FINE CONTENT-CARD-->
+					</div> <!--FINE CARD-->
+				</div> <!--FINE WRAP-CARD-->
 
+				<!-- CARD 4 -->
+				<div class="wrap-card"> <!--MARGIN CARD-->
+					<div class="card"> <!--CARD GENERAL-->
+						<div class="img-box-card"> <!--IMG BOX CARD-->
+							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
+						</div>
+						<div class="content-card"> <!--CONTENUTO CARD-->
+							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
+								<h6 id="owner-card">Di:
+									<span class="card-span"><a href="#">SuCunnu00</a></span>
+								</h6>
+								<div class="rank-box">
+									<i class="fa-solid fa-trophy"></i>
+									<span class="card-span">#1</span>
+								</div>
+								<i class="fa-solid fa-heart heart-nft"></i>
+								<i class="fa-solid fa-eye eye-nft"></i>
+							</div>
+							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
+								
+								<h6 id="address-card">Address:
+									<span class="card-span"><a href="#">rh374ho223r2h...</a></span>
+								</h6>
+								<i class="fa-solid fa-check"></i>
+								<i class="fa-solid fa-award"></i>
+							</div>
+							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
+							 	<span class="price-card">
+									<i class="fa-brands fa-ethereum"></i>
+									0,342 eth
+									<i class="fa-solid fa-shopping-cart"></i>
+								</span>
+							</div>
+						</div> <!--FINE CONTENT-CARD-->
+					</div> <!--FINE CARD-->
+				</div> <!--FINE WRAP-CARD-->
 
 			</div>
+			<div class="banner">
+				<div class="right-circle"></div>
+				<div class="left-circle"></div>
+					<SPAN id="title-banner"> FREE NFT TICKET</SPAN>
+					<SPAN id="date-banner"> fino al 30/12/2023</SPAN>
+					<SPAN id="type-banner"> Ogni giorno un estrazione!</SPAN>
+					<div id="btn-ticket">
+						<i class="fa-solid fa-ticket" id="icon-ticket"></i>
+						<a href="#" id="link-ticket">Scopri la lotteria</a>
+					</div>
+					<div id="btn-ticket">
+						<i class="fa-solid fa-ticket" id="icon-ticket"></i>
+						<a href="#" id="link-ticket">Scopri la lotteria</a>
+					</div>
+				</div>
+			<div class="box-submenu">
+				<div class="gift-btn">
+					<div class="bgc-color-icon">
+						<i class="fa-solid fa-list"></i>
+					</div>
+					<span>Catalogo NFT</span>
+				</div>
+
+				<div class="gift-btn">
+					<div class="bgc-color-icon">
+						<i class="fa-solid fa-circle-dollar-to-slot"></i>
+					</div>
+					<span>Play to Earn</span>
+				</div>
+
+				<div class="gift-btn">
+					<div class="bgc-color-icon">
+						<i class="fa-solid fa-gift"></i>
+					</div>
+					 <span>Premi esclusivi</span>
+				</div>
+
+				<div class="gift-btn">
+					<div class="bgc-color-icon">
+						<i class="fa-solid fa-copy"></i>
+					</div>
+					Copy trading
+				</div>
+			
+				<div class="gift-btn">
+					<div class="bgc-color-icon">
+						<i class="fa-solid fa-exchange"></i>
+					</div>
+					Exchange
+				</div>
+
+				<div class="gift-btn">
+					<div class="bgc-color-icon">
+						<i class="fa-solid fa-school"></i>
+					</div>
+					Academy
+				</div>
+
+			</div>
+		<!-- SLIDER CODE -->
+		<div id="slider-container">
+			<div id="slider">
+				<img src="logo-menu.png" alt="">
+			</div>
 		</div>
+
+		</div> <!--FINE CONTAINER HOME-->
 
 	</div>	
 
