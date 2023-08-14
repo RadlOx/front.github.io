@@ -316,6 +316,7 @@
 	.price-card {
 		opacity: .8;
 		background-color: #db6cc5;
+		background-image: linear-gradient(to left, #a76bdc, #682f9b);
 		padding: 5px 10px;
 		color:#f5f5f5;
 		border-radius: 50px;
@@ -324,10 +325,12 @@
 	}
 	.price-card i:last-child {
 		position: absolute;
-		background-color: #300808;
+		border-left: 1px solid #692f9b7c;
+		background-color: transparent;
 		padding: 6.5px 10px;
 		border-radius: 0 50px 50px 0;
-		right: 0;
+		right: 5px  ;
+		font-size: 14px;
 		bottom: 0;
 
 	}
@@ -356,6 +359,7 @@
 		position: absolute;
 		right: -8%;
 		border-radius: 50%;
+		z-index: 99;
 	}
 	.left-circle {
 		background-color: #e7e7e7;
@@ -367,8 +371,16 @@
 		left: -8%;
 		border-radius: 50%;
 	}
+	#bgc-img-banner {
+		position: relative;
+		right: -40%;
+		bottom: 10px;
+		z-index: 0;
+		
+	}
 	#title-banner {
 		border-left: 5px solid #a76bdc;
+		opacity: .8;
 		padding-left: 10px;
 		position: absolute;
 		top: 10px;
@@ -377,6 +389,7 @@
 	#date-banner {
 		font-size: 11px;
 		position: absolute;
+		opacity: .5;
 		right: 10px;
 		top: 10px;
 	}
@@ -393,13 +406,29 @@
 		padding: 10px 20px;
 		border-radius: 7px;
 		color: #efefef;
+		overflow: hidden;
 		position: absolute;	
 		bottom: 10px;
 		left: 30px;			
 	}
+	#btn-ticket i {
+		position: absolute;
+		transform: rotate(50deg);
+		font-size: 40px;
+		left: -5px;
+		top: 2px;
+		opacity: .3;
+	}
 	#btn-ticket a {
 		text-decoration: none;
 		color: #efefef;
+	}
+	#info-banner {
+		position: absolute;
+		right:30px;
+		bottom: 10px;
+		font-size: 11px;
+		opacity: .4;
 	}
 	/*SUBMENU BOX*/
 	.box-submenu {
@@ -417,13 +446,14 @@
 		align-items: center;
 		box-shadow: 0 0 14px 0 #a8a8a876;
 		width: 130px;
-		color: #343434;
+		color: #1f0335d6;
 		position: relative;
 		padding: 5px 0;
 		font-size: 12px;
 	}
 	.bgc-color-icon {
 		background-color:#a76bdc;
+		background-image: radial-gradient( #a76bdc, #7c46ab);
 		position: absolute;
 		color: #dcdcdc;
 		display: flex;
@@ -437,8 +467,22 @@
 		font-size: 13.4px;
 		border-radius: 30px;
 	}
-	.gift-btn span {
-		padding-left: 10px;
+	.gift-btn span:first-child {
+		padding-left: 15px;
+	}
+	.badge-submenu {
+		position: absolute;
+		background-color: #682f9b;
+		padding: 3px 8px;
+		border-radius: 10px 50px 10px 50px;
+		font-size: 8px;
+		box-shadow: 0 0 14px 0 #4d4d4e38;
+		color: #eaeaea;
+		right: -8px;
+		top:-5px;
+	}
+	#sub-item5 {
+		padding-left: 12px;
 	}
 	/*INPUT CODE*/
 	.input-box {
