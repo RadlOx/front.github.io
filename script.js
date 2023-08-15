@@ -38,3 +38,6 @@ function changeColor(){
 	icon.classList.toggle("colors");
 }
 
+// SCRIPT CARD
+
+
