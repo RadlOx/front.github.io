@@ -279,6 +279,7 @@
 	}
 	.card-span {
 		font-size: 11px;
+		margin-left: 2px;
 	}
 	.top-content-card {
 		padding: 4px ;
@@ -299,8 +300,9 @@
 		justify-content: center;
 	}
 	.avatar-card {
-		border:1px solid #692f9b1e;
+		border:3px solid #692f9b1e;
 		border-radius: 50%;
+		box-shadow: 0 0 10px 0 #4d4d4e55;
 	}
 	.bottom-content-card {
 		width: 100%;
@@ -527,6 +529,9 @@
 		font-size: 11px;
 		display: flex;
 	}
+	.nft-item:last-child {
+		border-bottom: none;
+	}
 	.img-nft {
 		border-radius: 7px;
 		margin: 2px;
@@ -570,13 +575,18 @@
 		opacity: .7;
 		color: #682f9b;
 	}
+	.numlike-nft {
+		max-width: 30px;
+		min-width: 30px;	
+		margin-right: 20px;
+	}
 	#like-nft {
 		position: relative;
 		left: -10px;
 		padding-left: 20px;
 		opacity: .5;
-		
 	}
+
 	#like-icon-nft {
 		position: absolute;
 		left: 8px;
@@ -593,6 +603,7 @@
 		gap: 4px;
 		opacity: .6;
 		font-size: 10px;
+		margin-left: 7px;
 	}
 	.label-price {
 		background-color: #eaeaea;
