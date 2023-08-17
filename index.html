@@ -3,601 +3,85 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ROCKET-X</title>
-	<link rel="stylesheet" href="respomnsive-mobile.css"> <!--MOBILE CSS-->
-	<link rel="stylesheet" href="main-style.css"> <!--MAIN CSS-->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS CSS-->
-	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script> <!--FONT AWSOME-->
-	
+	<title>STUDIO MEDICO</title>
+	<link rel="stylesheet" href="style-main.css">
+	<link rel="stylesheet" href="style-mobile.css">
+	<link rel="stylesheet" href="style-desk.css">
+	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script> 
 </head>
 <body>
-	<!-- HEADER -->
-	<header class="header"> <!--div princ. header-->
-		<div class="logo-box">
-			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo-menu.png?v=1691441820" width="50%" alt="">
-		</div>	
-		<!-- DIV CENTRALE SOCIAL -->
-		<div class="center-div">
-			<div class="social-box" id="box1">
-				<i class="fa-solid fa-wallet"></i> <a href="#">Connect wallet</a>
-			</div>
-
-		</div>
-		<!-- INPUT APERTURA MENU LAT. -->
-		<input type="checkbox" name="menu-check" id="check-menu">
-		<label for="check-menu">
-			<div class="box-icon-menu" >
-				<span class="bar-icon"></span>
-			</div>
-		</label>
-		<!-- MENU LAT. -->
-		
-		<div class="container-menu" id="container-menu">
-			
-			<label for="check-login">
-				<i class="fa-solid fa-user-gear colors" id="login-icon" ></i>
-			</label>
-
-			<i class="fa-solid fa-list"></i>
-
-
-			<i class="fa-solid fa-message"></i>
-
-		</div>
-
-	</header>
-
-	<!-- MAIN CODE -->
-	<div class="main">
-		<!-- ELEMENTO DI SFONDO  -->
-		<div class="under" id="under-bgc">
-			<!-- VIDEO DI SFONDO -->
-			<video src="https://cdn.shopify.com/videos/c/o/v/cba7967e53f14a8490bb97bd49317764.mp4" width="100%" autoplay loop muted id="first-video"></video> 
-			<video src="https://cdn.shopify.com/videos/c/o/v/54149ec5bac74eca80c84b5544fbdc8b.mp4" width="100%" autoplay loop muted></video>
-		</div>
-		<!-- DIV PRINCIPALE -->
-		<input type="checkbox" name="check" id="check-login">
-
-		<div id="container-login">
-			<!-- FORM SING-UP -->
-			<i class="fa-solid fa-question close"></i>
-			<form id="form-1" method="post" action="submit.html" onsubmit="return validate()">
-				<div class="input-box" id="input-name">
-					<input type="text" name="name" class="input" id="name" placeholder="Nome">
-					<i class="fa-solid fa-user input-icon"></i>
-					<i class="fa-solid fa-check icon-checkName"></i>
-
-				</div>
-
-				<div class="input-box">
-					<input type="email" name="email" class="input" id="email" placeholder="Email">
-					<i class="fa-solid fa-envelope input-icon"></i>
-				</div>
-				
-				<div class="input-box">
-					<input type="password" name="password" class="input" id="password" placeholder="Password">
-					<i class="fa-solid fa-key input-icon"></i>
-					<i class="fa-solid fa-eye icon-showpsw"></i>
-				</div>
-				<p id="name-desc">Min. 8 caratteri, almeno una lettera maiusola e un numero</p>
-
-				<div class="input-box">
-					<input type="password" name="conf-password" class="input" id="conf-password" placeholder="Conferma password">
-					<i class="fa-solid fa-key input-icon"></i>
-					<i class="fa-solid fa-eye icon-showpsw"></i>
-				</div>
-				<div class="check-psw">
-					<p id="psw-status">password debole </p>
-					<div class="checker "></div>
-					<div class="checker "></div>
-					<div class="checker "></div>
-				</div>
-
-				<div class="btn-box">
-					<a href="#" id="btnCrea">
-						<i class="fa-solid fa-plus create-icon"></i>
-					Crea account</a>
-					<p>oppure</p>
-					<button type="submit" id="btnLogin" >
-						<i class="fa-solid fa-unlock create-icon"></i>
-						Accedi</button>
-				</div>
-
-				
-			</form>
-		</div>
-		<!--  CONTAINER HOMEPAGE -->
-		<div id="container-home">
-			<div class="head-home">
-				
-			</div>
 	
-			<!-- TITOLO SOPRA CARD -->
-			<div class="top-box">
-				<i class="fa-solid fa-trophy"></i>
-				
-				<h4>TOP RANKING</h4>
-			</div>
-			<!-- CARD HOME -->
-			<div class="container-card">
+	<header class="header">
 
-				<!-- CARD 1 -->
-				<div class="wrap-card"> <!--MARGIN CARD-->
-					<div class="card"> <!--CARD GENERAL-->
-						<div class="img-box-card"> <!--IMG BOX CARD-->
-							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
-						</div>
-						<div class="content-card"> <!--CONTENUTO CARD-->
-							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
-								<h6 id="owner-card">Nome: <br>
-									<span class="card-span"><a href="#" class="owner-lnk">#231 RANDOM.</a></span>
-								</h6>
-								<div class="rank-box">
-									<i class="fa-solid fa-trophy rank-icon"></i>
-									<span class="card-span">#1</span>
-								</div>
-								<i class="fa-solid fa-heart heart-nft"></i>
-								<i class="fa-solid fa-eye eye-nft"></i>
-							</div>
-							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
-								
-								<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/download.png?v=1692130792" width="33px" class="avatar-card"  alt="">
-								<h6 id="address-card">Address:
-									<span class="card-span"><a href="#">rh374ho2r2h...</a></span>
-								</h6>
-							</div>
-							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
-							 	<span class="price-card">
-									<i class="fa-brands fa-ethereum"></i>
-									23,342
-									<i class="fa-solid fa-shopping-cart"></i>
-								</span>
-							</div>
-						</div> <!--FINE CONTENT-CARD-->
-					</div> <!--FINE CARD-->
-				</div> <!--FINE WRAP-CARD-->
+		<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/MEDICAL_clinic.png?v=1692273171" width="50%" id="header-logo" alt="">
+		<!-- MENU NAVBAR -->
+		<!-- INPUT MENU -->
+		<input type="checkbox" name="check" id="check-menu">
+		<nav class="navbar">
+			<ul class="navmenu">
+				<li class="navitem">
+					<i class="fa-solid fa-plus"></i>
+					<span class="label-itemnav">
+						<a href="#">Servizi</a>
+					</span>
+					<i class="fa-solid fa-stethoscope"></i>
+				</li>
+				<li class="navitem">
+					<i class="fa-solid fa-house-medical"></i>
+					<span class="label-itemnav">
+						<a href="#">Abulatori</a>
+					</span>
+					<i class="fa-solid fa-stethoscope"></i>
+				</li>
+				<li class="navitem">
+					<i class="fa-solid fa-heart-pulse"></i>
+					<span class="label-itemnav">
+						<a href="#">Centro analisi</a>
+					</span>
+					<i class="fa-solid fa-stethoscope"></i>
+				</li>
+				<li class="navitem">
+					<i class="fa-solid fa-laptop-medical"></i>
+					<span class="label-itemnav">
+						<a href="#">Richiedi consulto online</a>
+					</span>
+					<i class="fa-solid fa-stethoscope"></i>
+				</li>
 
-				<!-- CARD 2 -->
-				<div class="wrap-card"> <!--MARGIN CARD-->
-					<div class="card"> <!--CARD GENERAL-->
-						<div class="img-box-card"> <!--IMG BOX CARD-->
-							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
-						</div>
-						<div class="content-card"> <!--CONTENUTO CARD-->
-							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
-								<h6 id="owner-card">Nome: <br>
-									<span class="card-span"><a href="#" class="owner-lnk">#12 DRAKEMYNO</a></span>
-								</h6>
-								<div class="rank-box">
-									<i class="fa-solid fa-trophy rank-icon"></i>
-									<span class="card-span">#2</span>
-								</div>
-								<i class="fa-solid fa-heart heart-nft"></i>
-								<i class="fa-solid fa-eye eye-nft"></i>
-							</div>
-							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
-								
-								<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/download.png?v=1692130792" width="33px" class="avatar-card"  alt="">
-								<h6 id="address-card">Address:
-									<span class="card-span"><a href="#">rh374ho2r2h...</a></span>
-								</h6>
-							</div>
-							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
-							 	<span class="price-card">
-									<i class="fa-brands fa-ethereum"></i>
-									213,342
-									<i class="fa-solid fa-shopping-cart"></i>
-								</span>
-							</div>
-						</div> <!--FINE CONTENT-CARD-->
-					</div> <!--FINE CARD-->
-				</div> <!--FINE WRAP-CARD-->
-
-				<!-- CARD 3 -->
-				<div class="wrap-card"> <!--MARGIN CARD-->
-					<div class="card"> <!--CARD GENERAL-->
-						<div class="img-box-card"> <!--IMG BOX CARD-->
-							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
-						</div>
-						<div class="content-card"> <!--CONTENUTO CARD-->
-							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
-								<h6 id="owner-card">Nome: <br>
-									<span class="card-span"><a href="#" class="owner-lnk">#231 RANDOM.</a></span>
-								</h6>
-								<div class="rank-box">
-									<i class="fa-solid fa-trophy rank-icon"></i>
-									<span class="card-span">#1</span>
-								</div>
-								<i class="fa-solid fa-heart heart-nft"></i>
-								<i class="fa-solid fa-eye eye-nft"></i>
-							</div>
-							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
-								
-								<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/download.png?v=1692130792" width="33px" class="avatar-card"  alt="">
-								<h6 id="address-card">Address:
-									<span class="card-span"><a href="#">rh374ho2r2h...</a></span>
-								</h6>
-							</div>
-							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
-							 	<span class="price-card">
-									<i class="fa-brands fa-ethereum"></i>
-									213,342
-									<i class="fa-solid fa-shopping-cart"></i>
-								</span>
-							</div>
-						</div> <!--FINE CONTENT-CARD-->
-					</div> <!--FINE CARD-->
-				</div> <!--FINE WRAP-CARD-->
-				
-				<!-- CARD 4 -->
-				<div class="wrap-card"> <!--MARGIN CARD-->
-					<div class="card"> <!--CARD GENERAL-->
-						<div class="img-box-card"> <!--IMG BOX CARD-->
-							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
-						</div>
-						<div class="content-card"> <!--CONTENUTO CARD-->
-							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
-								<h6 id="owner-card">Nome: <br>
-									<span class="card-span"><a href="#" class="owner-lnk">#231 RANDOM.</a></span>
-								</h6>
-								<div class="rank-box">
-									<i class="fa-solid fa-trophy rank-icon"></i>
-									<span class="card-span">#1</span>
-								</div>
-								<i class="fa-solid fa-heart heart-nft"></i>
-								<i class="fa-solid fa-eye eye-nft"></i>
-							</div>
-							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
-								
-								<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/download.png?v=1692130792" width="33px" class="avatar-card"  alt="">
-								<h6 id="address-card">Address:
-									<span class="card-span"><a href="#">rh374ho2r2h...</a></span>
-								</h6>
-							</div>
-							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
-							 	<span class="price-card">
-									<i class="fa-brands fa-ethereum"></i>
-									213,342
-									<i class="fa-solid fa-shopping-cart"></i>
-								</span>
-							</div>
-						</div> <!--FINE CONTENT-CARD-->
-					</div> <!--FINE CARD-->
-				</div> <!--FINE WRAP-CARD-->
-
-				<!-- CARD 5 -->
-				<div class="wrap-card"> <!--MARGIN CARD-->
-					<div class="card"> <!--CARD GENERAL-->
-						<div class="img-box-card"> <!--IMG BOX CARD-->
-							<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="150px" alt="">
-						</div>
-						<div class="content-card"> <!--CONTENUTO CARD-->
-							<div class="top-content-card"> <!--PRIMA RIGA CARD-->
-								<h6 id="owner-card">Nome: <br>
-									<span class="card-span"><a href="#" class="owner-lnk">#231 RANDOM.</a></span>
-								</h6>
-								<div class="rank-box">
-									<i class="fa-solid fa-trophy rank-icon"></i>
-									<span class="card-span">#1</span>
-								</div>
-								<i class="fa-solid fa-heart heart-nft"></i>
-								<i class="fa-solid fa-eye eye-nft"></i>
-							</div>
-							<div class="mid-content-card"> <!--SECONDA RIGA CARD-->
-								
-								<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/download.png?v=1692130792" width="33px" class="avatar-card"  alt="">
-								<h6 id="address-card">Address:
-									<span class="card-span"><a href="#">rh374ho2r2h...</a></span>
-								</h6>
-							</div>
-							<div class="bottom-content-card"> <!--TERZA RIGA CARD-->
-							 	<span class="price-card">
-									<i class="fa-brands fa-ethereum"></i>
-									213,342
-									<i class="fa-solid fa-shopping-cart"></i>
-								</span>
-							</div>
-						</div> <!--FINE CONTENT-CARD-->
-					</div> <!--FINE CARD-->
-				</div> <!--FINE WRAP-CARD-->
-
-			</div> <!-- FINE CARD HOME  -->
-			<div class="banner">
-				<div class="right-circle"></div>
-				<div class="left-circle"></div>
-					<SPAN id="title-banner"> FREE NFT TICKET</SPAN>
-					<SPAN id="date-banner"> fino al 30/12/2023</SPAN>
-					<SPAN id="type-banner"> Ogni giorno un estrazione!</SPAN>
-					<div id="btn-ticket">
-						<i class="fa-solid fa-ticket" id="icon-ticket"></i>
-						<a href="#" id="link-ticket">Scopri la lotteria</a>
-					</div>
-					<div id="btn-ticket">
-						<i class="fa-solid fa-ticket" id="icon-ticket"></i>
-						<a href="#" id="link-ticket">Scopri la lotteria</a>
-					</div>
-					<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/logo-2.png?v=1692130793" id="bgc-img-banner" alt="">
-					<SPAN id="info-banner"> Official Lottery <br> <center>by <b>WOT</b></center></SPAN>
-				</div>
-			<div class="box-submenu">
-				<div class="gift-btn">
-					<div class="bgc-color-icon">
-						<i class="fa-solid fa-store"></i>
-					</div>
-					<span>Marketplace</span>
-					<span class="badge-submenu">NFT</span>
-				</div>
-
-				<div class="gift-btn">
-					<div class="bgc-color-icon">
-						<i class="fa-solid fa-circle-dollar-to-slot"></i>
-					</div>
-					<span>Play to Earn</span>
-				</div>
-
-				<div class="gift-btn">
-					<div class="bgc-color-icon">
-						<i class="fa-solid fa-copy"></i>
-					</div>
-					<span>Copy trading</span>
-				</div>
-			
-				<div class="gift-btn">
-					<div class="bgc-color-icon">
-						<i class="fa-solid fa-exchange"></i>
-					</div>
-					<span>Exchange</span>
-				</div>
-
-				
-				<div class="gift-btn">
-					<div class="bgc-color-icon">
-						<i class="fa-solid fa-gift"></i>
-					</div>
-					 <span id="sub-item5">Premi esclusivi</span>
-					 <span class="badge-submenu">VIP</span>
-
-				</div>
-
-
-				<div class="gift-btn">
-					<div class="bgc-color-icon">
-						<i class="fa-solid fa-school"></i>
-					</div>
-					<span>Academy</span>
-					<span class="badge-submenu">NEW</span>
-
-				</div>
-
-			</div>
-		<!-- LIST NFT CODE -->
-		<!-- SEARCH & FILTRI -->
-				<!-- <input type="search" name="search" id="search"> 
-				<SPAN id="filtri">FILTRI <i class="fa-solid fa-caret-down"></i></SPAN> -->
-			<div class="box-list-nft">
-				<ul id="nft-list">
-					<li class="nft-item">
-						<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="60px" class="img-nft" alt="">
-						<div class="info-item-nft">
-							<span id="onwer-nft">Nome: <a href="#">#12 DrakeMyn</a></span>
-							<span id="address-nft">Address:<a href="#">yr27ry97ry29..</a> <i class="fa-solid fa-copy" id="copy-icon-nft-list"></i></span>
-							<div class="icon-box-nft">
-								<div class="numlike-nft">
-									<span id="like-nft">12.34k</span>
-									<i class="fa-solid fa-heart like-icon" id="like-icon-nft"></i>
-								</div>
-								<i class="fa-solid fa-chart-line"></i>
-								<i class="fa-solid fa-folder"></i>
-								<i class="fa-solid fa-bars-progress"></i>
-							</div>
-						</div>
-						<div class="history-price">
-							<div class="label-price">
-								<div class="top-label-price">
-									all
-								</div>
-								+422% <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 anno
-								</div>
-								+102% <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									6 mesi
-								</div>
-								+41% <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 mese
-								</div>
-								-4% <i class="fa-solid fa-caret-down"></i>
-							</div>
-						</div>
+				<li class="navitem">
+					<i class="fa-solid fa-suitcase-medical"></i>
+					<span class="label-itemnav">
+						<a href="#">Visite a domicilio</a>
+					</span>
+					<i class="fa-solid fa-hand-holding-medical"></i>
+				</li>
+				<div class="bi-class">
+						
+					<li class="navitem"><i class="fa-solid fa-receipt"></i>
+						<span>
+							Prendi un appuntamento
+						</span> 
 					</li>
-					<li class="nft-item">
-						<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="60px" class="img-nft" alt="">
-						<div class="info-item-nft">
-							<span id="onwer-nft">di: <a href="#">SuCunnu00</a></span>
-							<span id="address-nft">Address:<a href="#">yr27ry97ry29..</a> <i class="fa-solid fa-copy" id="copy-icon-nft-list"></i></span>
-							<div class="icon-box-nft">
-								<div class="numlike-nft">
-									<span id="like-nft">2.1M</span>
-									<i class="fa-solid fa-heart like-icon" id="like-icon-nft"></i>
-								</div>
-								<i class="fa-solid fa-chart-line"></i>
-								<i class="fa-solid fa-folder"></i>
-								<i class="fa-solid fa-bars-progress"></i>
-							</div>
-						</div>
-						<div class="history-price">
-							<div class="label-price">
-								<div class="top-label-price">
-									all
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 anno
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									6 mesi
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 mese
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-						</div>
+					<li class="navitem-support">
+						<span>
+							<i class="fa-solid fa-phone"></i>
+						</span> 
 					</li>
-					<li class="nft-item">
-						<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="60px" class="img-nft" alt="">
-						<div class="info-item-nft">
-							<span id="onwer-nft">di: <a href="#">SuCunnu00</a></span>
-							<span id="address-nft">Address:<a href="#">yr27ry97ry29..</a> <i class="fa-solid fa-copy" id="copy-icon-nft-list"></i></span>
-							<div class="icon-box-nft">
-								<div class="numlike-nft">
-									<span id="like-nft">12.34k</span>
-									<i class="fa-solid fa-heart like-icon" id="like-icon-nft"></i>
-								</div>
-								<i class="fa-solid fa-chart-line"></i>
-								<i class="fa-solid fa-folder"></i>
-								<i class="fa-solid fa-bars-progress"></i>
-							</div>
-						</div>
-						<div class="history-price">
-							<div class="label-price">
-								<div class="top-label-price">
-									all
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 anno
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									6 mesi
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 mese
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-						</div>
-					</li>
-					<li class="nft-item">
-						<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="60px" class="img-nft" alt="">
-						<div class="info-item-nft">
-							<span id="onwer-nft">di: <a href="#">SuCunnu00</a></span>
-							<span id="address-nft">Address:<a href="#">yr27ry97ry29..</a> <i class="fa-solid fa-copy" id="copy-icon-nft-list"></i></span>
-							<div class="icon-box-nft">
-								<div class="numlike-nft">
-									<span id="like-nft">12.34k</span>
-									<i class="fa-solid fa-heart like-icon" id="like-icon-nft"></i>
-								</div>
-								<i class="fa-solid fa-chart-line"></i>
-								<i class="fa-solid fa-folder"></i>
-								<i class="fa-solid fa-bars-progress"></i>
-							</div>
-						</div>
-						<div class="history-price">
-							<div class="label-price">
-								<div class="top-label-price">
-									all
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 anno
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									6 mesi
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 mese
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-						</div>
-					</li>
-					<li class="nft-item">
-						<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/XjL58WHOUA7ii1ztOYAOhcWBQgYCrUoSMuWQqiCf.gif?v=1691834802" width="60px" class="img-nft" alt="">
-						<div class="info-item-nft">
-							<span id="onwer-nft">di: <a href="#">SuCunnu00</a></span>
-							<span id="address-nft">Address:<a href="#">yr27ry97ry29..</a> <i class="fa-solid fa-copy" id="copy-icon-nft-list"></i></span>
-							<div class="icon-box-nft">
-								<div class="numlike-nft">
-									<span id="like-nft">12.34k</span>
-									<i class="fa-solid fa-heart like-icon" id="like-icon-nft"></i>
-								</div>
-								<i class="fa-solid fa-chart-line"></i>
-								<i class="fa-solid fa-folder"></i>
-								<i class="fa-solid fa-bars-progress"></i>
-							</div>
-						</div>
-						<div class="history-price">
-							<div class="label-price">
-								<div class="top-label-price">
-									all
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 anno
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									6 mesi
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-							<div class="label-price">
-								<div class="top-label-price">
-									1 mese
-								</div>
-								+422 <i class="fa-solid fa-caret-up"></i>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			
-		</div> <!--FINE CONTAINER HOME-->
+				</div>
+	
+			</ul>
+			<label for="check-menu" id="label-boxmenu">
+				<div class="hamburger-box">
+					<i class="fa-solid fa-list"></i>
+				</div>
+						
+			</label>
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/MEDICAL_clinic_008064d5-795c-4de8-a7ad-c6ca3c8d8881.png?v=1692304799"
+			width="100%" id="img-bottom-nav" alt="">
+		</nav>
+	</header>
+	<main class="main">
 
-	</div>	
-
-
-	<script src="script.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-    </script>
+	</main>
 </body>
 </html>
