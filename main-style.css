@@ -14,5 +14,6 @@ html {
 }
 body {
 	background-color: #33373e;
+	background-image: linear-gradient(to top, #e29e00, #860000 , #33373e);
 	overflow-x: hidden;
 }

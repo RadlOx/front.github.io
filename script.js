@@ -9,17 +9,16 @@ var scritta = document.getElementById ('parallax-img8');
 var secHamb = document.getElementById ('sec-hamburger');
 var txtIng = document.getElementById('txt-box');
 
-
 window.addEventListener('scroll', () => {
 	let value = window.scrollY;
 
-	if ( value<180) {
+	if ( value<140) {
 		paneSotto.style.top = value * 2.3 + 'px';
 		lattuga.style.top = value * 2.1 + 'px';
 		carne.style.top = value * 1.7 + 'px';
 		formaggio.style.top = value * 1.4 + 'px';
 		pomodoro.style.top = value * 1 + 'px';
-		cipolla.style.top = value * .7 + 'px';
+		cipolla.style.top = value * .5 + 'px';
 	}
 
 	if (value>100) {
@@ -29,7 +28,7 @@ window.addEventListener('scroll', () => {
 		scritta.style.opacity = 1;
 	}
 
-	if (value>130) {
+	if (value>140) {
 		secHamb.style.transform = "translateX(50%)";
 		txtIng.style.transform = "translateX(0%)"
 		scritta.style.display = "none";
