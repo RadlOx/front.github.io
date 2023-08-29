@@ -50,15 +50,28 @@ var menuContainer = document.getElementById('box-icon-header');
 var call = document.getElementById('call-us');
 var closeMenu = document.getElementById('close-menu');
 var list = document.getElementById('menu-icon');
+var menuPage = document.getElementById('menu-page');
+var boxSearch = document.getElementById('box-search');
+var search = document.getElementById('search-bar');
 
-menuIcon.addEventListener('click', () => {
-	menuContainer.style.width = '95%';
-	call.style.display = 'none';
+list.addEventListener('click', () => {
+	menuContainer.style.width = '90.5%';
+	menuContainer.style.boxShadow = '0 0 14px 0 #33373e65';
+	list.style.display = 'none';
 	closeMenu.style.display = 'block';
+	menuPage.style.maxHeight = '100vh';
+	menuPage.style.borderBottom = '10px groove #dba51c';
+	boxSearch.style.opacity = '1';
+
 })
 
 closeMenu.addEventListener('click', () => {
 	menuContainer.style.width = '30%';
-	call.style.display = 'block';
+	menuContainer.style.boxShadow = ' 0 0 5px 10px #eaeaea14';
+	list.style.display = 'block';
 	closeMenu.style.display = 'none';
+	menuPage.style.maxHeight = '0vh';
+	menuPage.style.borderBottom = '0px';
+	boxSearch.style.opacity = '0';
+
 })
