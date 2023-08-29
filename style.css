@@ -1,70 +1,86 @@
-header {
-	position: fixed;
+.header {
+	padding: 15px;
+	position: relative;
 	z-index: 99;
-	padding: 20px;
-	width: 100%;
-}
-#sec-hamburger {
-	width: 100%;
-	height: 120vh;
-	position: relative;
-	padding-top: 50px;
-	transition: all .4s ease-in-out;
-}
-#sec-hamburger2 {
-	width: 100%;
-	height: 120vh;
-	position: relative;
-	padding-top: 50px;
-	transition: all .4s ease-in-out;
-}
-.bgc-img {
-	width: 100%;
-	position: absolute;
-}
-.bgc-img img {
-	width: 100%;
-	position: absolute;
-}
-.bgc-img img:first-child {
-	animation: move-forever 5s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-@keyframes move-forever {
-	0% {
-		transform: rotate(0)
-	}
-	20% {
-		transform: rotate(3deg);
-	}
-	40% {
-		transform: rotate(0);
-	}
-	60% {
-		transform: rotate(-3deg);
-	}
-	100% {
-		transform: rotate(0);
-	}
-}
-.txt-box {
-	padding-top: 50px;
-	position: absolute;
-	top:220px;
 	display: flex;
-	flex-direction: column;
-	gap: 15px;
-	left: -50%;
-	transform: translateX(-100%);
+	justify-content: space-between;
+	align-items: center;
+}
+#box-icon-header {
+	background-color: #dba51c;
+	box-shadow: 0 0 14px 0 #dba51c85;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 50px;
+	position: absolute;
+	right: 10px;
+	width: 30%;
 	transition: all .4s ease-in-out;
 }
-.ingredient {
-	background-color: #ffffff5b;
-	border-radius: 0 10% 100% 0 / 0 100% 20% 0;
-	margin: 10px;
-	margin-left: 0;
-	padding: 10px 30px;
+.box-icon {
+	background-color: #ffffff31;
+	width: 30px;
+	height: 30px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	z-index: 99;
 }
-#scritta2 {
-	bottom:-130px;
+.box-icon:last-child {
+	background-color: #ffffffe5;
+}
+.box-icon:last-child i {
+	color: #dba51c;
+}
+.box-icon i {
+	color: #eaeaea;
+}
+#close-menu {
+	display: none;
+}
+#circle-1 {
+	background-color: #dba51c;
+	width: 300px;
+	transition: all .4s ease-in-out;
+	height: 300px;
+	border-radius: 50%;
+	left: 12.5%;
+	top: 20%;
 	position: absolute;
-} 
+	z-index: 0;
+}
+#parallax-container {
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	transition: all .4s ease-in-out
+}
+
+#parallax-container img {
+	position: absolute;
+	width: 100%;
+	margin-top: -100px;
+}
+#txt-png {
+	top: -100px;
+	margin-top: 0;
+	transition: all .4s ease-in-out;
+}
+
+/*MAIN*/
+
+main {
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	align-items: start;
+}
+#sec-1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: #000;
+}
