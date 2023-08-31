@@ -13,6 +13,10 @@ var circle1 = document.getElementById('circle-1');
 var circle2 = document.getElementById('circle-2');
 var circleKcal = document.getElementById('circle-kcal');
 var contKcal = document.getElementById('cont-kcal');
+var circleProtein = document.getElementById('circle-protein');
+var contProtein = document.getElementById('cont-protein');
+var circleFat = document.getElementById('circle-fat');
+var contFat = document.getElementById('cont-fat');
 var ingr = document.getElementById('ingredienti');
 
 window.addEventListener('scroll', () => {
@@ -38,8 +42,12 @@ window.addEventListener('scroll', () => {
 		scritta.style.transform = "translateX(-67%) translateY(-25%)";
 		scritta.style.width = '60%';
 		ingr.style.transform = 'translateX(0%) translateY(-5%)';
-		circleKcal.style.transform = 'translateX(10%) translateY(99%) scale(.8)';
-		contKcal.style.opacity = '1'
+		circleKcal.style.transform = 'translateX(-35%) translateY(99%) scale(.7)';
+		contKcal.style.opacity = '1';
+		circleProtein.style.transform = 'translateX(-125%) translateY(195%) scale(1.05)';
+		contProtein.style.opacity = '1';
+		circleFat.style.transform = 'translateX(0%) translateY(445%) scale(1.05)';
+		contFat.style.opacity = '1';
 	}
 	else {
 		scritta.style.transform = "translateY(0%)";
@@ -50,7 +58,14 @@ window.addEventListener('scroll', () => {
 		circle1.style.transform = 'scale(1)';
 		ingr.style.transform = 'translateX(-100%)';
 		circleKcal.style.transform = 'translateX(0%) translateY(0%) scale(1)';
-		contKcal.style.opacity = '0'
+		contKcal.style.opacity = '0';
+		circleProtein.style.transform = 'translateX(0%) translateY(0%) scale(1)';
+		contProtein.style.opacity = '0';
+		contProtein.style.backgroundColor = '#dba51c';
+
+		circleFat.style.transform = 'translateX(0%) translateY(0%) scale(1)';
+		contFat.style.opacity = '0';
+
 	}
 })
 
@@ -64,6 +79,9 @@ var list = document.getElementById('menu-icon');
 var menuPage = document.getElementById('menu-page');
 var boxSearch = document.getElementById('box-search');
 var search = document.getElementById('search-bar');
+var BoxMenu = document.getElementById('menu-cont');
+var headSez1 = document.getElementById('header-sezione1');
+var contSez1 = document.getElementById('cont-sez1');
 
 list.addEventListener('click', () => {
 	menuContainer.style.width = '90.5%';
@@ -73,7 +91,9 @@ list.addEventListener('click', () => {
 	menuPage.style.maxHeight = '150vh';
 	menuPage.style.borderBottom = '10px groove #dba51c';
 	boxSearch.style.opacity = '1';
-
+	BoxMenu.style.transform = 'translateX(0%)';
+	headSez1.style.transform = 'translateX(0)';
+	contSez1.style.transform = 'translateX(0)';
 })
 
 closeMenu.addEventListener('click', () => {
@@ -84,5 +104,9 @@ closeMenu.addEventListener('click', () => {
 	menuPage.style.maxHeight = '0vh';
 	menuPage.style.borderBottom = '0px';
 	boxSearch.style.opacity = '0';
+	BoxMenu.style.transform = 'translateX(200%)';
+	headSez1.style.transform = 'translateX(-100%)';
+	contSez1.style.transform = 'translateX(120%)';
+
 
 })

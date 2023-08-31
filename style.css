@@ -35,7 +35,15 @@
 	outline: none;
 	line-height: 20px;
 	padding: 5px 10px 5px 20px;
-
+}
+#search-menu {
+	color: #eaeaea;
+	position: absolute;
+	top: 10px;
+	right:72%;
+	background-color: #dba51c;
+	padding: 7px; 
+	border-radius: 50%;
 }
 .box-icon {
 	background-color: #ffffff31;
@@ -67,11 +75,116 @@
 	position: absolute;
 	top: 0px;
 	left: 0;
-	max-height: 0vh;
+	max-height: 0;
 	transition: all 0.5s ease-in-out;
+	display: flex;
+	justify-content: center;
+	
 }
+.menu-content {
+	width: 85%;
+	position: absolute;
+	height: auto;
+	border-top: none;
+	padding: 10px;
+	border-radius: 0 0 20px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 75px;
+	transform: translateX(-200%);
+	transition: all .6s ease-in-out;
+}
+.menu-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	gap: 10px;
+}
+.menu-item {
+	font-size: 25px;
+	background-color: #eaeaea5f;
+	box-shadow: 0 0 3px 1px #cbcbcb65;
+	padding: 20px;
+	color: #dba51c;
+	border-radius: 10px;
 
+}
+#header-sezione1 {
+	margin: 20px;
+	padding: 10px;
+	margin-top: 270px;
+	width: 100%;
+	position: absolute;
+	transform : translateX(-100%);
+	transition: all .6s ease-in-out;
+}
+#header-sezione1 h2 {
+	border-left: 4px solid #dba51c;
+	padding-left: 20px;
+	font-size: 16px;
 
+}
+.cont-sezione1 {
+	position: relative;
+	margin-top: 50vh;
+	width: 95%;
+	transform: translateX(100%);
+	transition: all .5s ease-in-out;
+}
+#slider-cont {
+	border:1px solid #eaeaea5f;
+	border-radius: 10px;
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+}
+.card {
+	width: 33%;
+	border:1px solid #eaeaea;
+	box-shadow: 0 0 14px 0 #dba51c4f;
+	border-radius: 10px;
+	font-size: 10px;
+}
+.box-img-card {
+	margin-left: 4px;
+	margin-top: -40px;
+}
+.cont-card {
+	padding: 7px;
+	position: relative;
+}
+.cont-card h2 {
+	position: absolute;
+	text-transform: uppercase;
+	top: -10px;
+}
+.cont-card p {
+	margin-top: 7px;
+	text-align: center;
+}
+.icon-item {
+	position: absolute;
+	right: -10px;
+	top: -70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 10px;
+}
+.icon-item i {
+	font-size: 11px;
+	padding: 3px;
+	border-radius: 50%;
+	margin: 5px;
+	color: #f5f5f5;
+	background-color: #db2f1c;
+
+}
 /*CODICE PARALLAX*/
 #circle-1 {
 	background-color: #dba51c;
@@ -137,8 +250,69 @@
 	font-size: 20px;
 }
 #cont-kcal p {
-	font-size: 44px;
+	font-size: 36px;
 }
+#circle-protein {
+	background-color: #dba51c4c;
+	width: 100px;
+	transition: all .6s ease-in-out;
+	height: 100px;
+	border-radius: 50%;
+	bottom: 20%;
+	right: 10%;
+	position: absolute;
+	z-index: 0;
+	box-shadow: 0 0 5px 1px #eaeaea14;
+}
+#cont-protein {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 0;
+	transition: all .4s ease-in-out;
+	color: #fff;
+}
+#cont-protein h3 {
+	font-size: 14px;
+}
+#cont-protein p {
+	font-size: 24px;
+}
+#circle-fat {
+	background-color: #eaeaea14;
+	width: 100px;
+	transition: all .6s ease-in-out;
+	height: 100px;
+	border-radius: 50%;
+	top: 30%;
+	right: 10%;
+	position: absolute;
+	z-index: 0;
+	box-shadow: 0 0 5px 1px #eaeaea14;
+}
+#cont-fat {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 0;
+	transition: all .4s ease-in-out;
+	color: #fff;
+}
+#cont-fat h3 {
+	font-size: 14px;
+}
+#cont-fat p {
+	font-size: 24px;
+}
+
 #parallax-container {
 	width: 100%;
 	position: relative;
@@ -149,6 +323,7 @@
 #parallax-container img {
 	position: absolute;
 	width: 100%;
+	z-index: 1;
 	margin-top: -100px;
 }
 #txt-png {
@@ -168,10 +343,10 @@
 	transition: all .4s ease-in-out;
 }
 .raw {
-	background-color: #fff;
+	background-color: #7a5b0c;
 	box-shadow: 0 0 14px 0 #00000020;
 	border-radius: 0 50px 50px 0;
-	color: #000;
+	color: #eaeaea;
 	padding: 10px 30px;
 	position: relative;
 	width: 300px;
@@ -191,3 +366,4 @@ main {
 	display: flex;
 	background-color: #000;	
 }
+
