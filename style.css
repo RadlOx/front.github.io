@@ -23,7 +23,6 @@
 #box-search {
 	display: flex;
 	align-items: center;
-	position: relative;
 	justify-content: center;
 	margin: 4px;
 	opacity: 0;
@@ -32,20 +31,10 @@
 #search-bar {
 	border:none;
 	border-radius: 50px;
-	position: relative;
-	outline: none;
-	display: none;
-	line-height: 20px;
-	padding: 5px 10px 5px 35px;
-}
-#search-icon {
-	color: #eaeaea;
 	position: absolute;
-	top: 1px;
-	left:-1px;
-	background-color: #dba51c;
-	padding: 7px; 
-	border-radius: 50%;
+	outline: none;
+	line-height: 20px;
+	padding: 5px 10px 5px 20px;
 }
 .box-icon {
 	background-color: #ffffff31;
@@ -84,7 +73,7 @@
 	
 }
 .menu-content {
-	width: 85%;
+	width: 100%;
 	position: absolute;
 	height: auto;
 	border-top: none;
@@ -142,14 +131,17 @@
 	width: 100%;
 	padding: 10px;
 	display: flex;
+	height: auto;
 	gap: 20px;
 }
 .card {
 	width: 33%;
+	position: relative;
 	border:1px solid #eaeaea;
 	box-shadow: 0 0 14px 0 #dba51c4f;
 	border-radius: 10px;
 	font-size: 10px;
+	margin-bottom: 30px;
 }
 .box-img-card {
 	margin-left: 4px;
@@ -186,6 +178,30 @@
 	color: #f5f5f5;
 	background-color: #db2f1c;
 
+}
+#btn-addcart {
+	z-index: 0;
+	opacity: .9;
+	background-color: #dba51c;
+	background-image: linear-gradient(to left, #dca723, #f5c449);
+	color: #33373e;
+	left: 20px;
+	box-shadow: 0 0 14px 0 #dba51c4f;
+	border-radius: 0 0 50% 50%;
+	padding: 5px 10px;
+	position: absolute;
+}
+#btn-ingr {
+	z-index: 0;
+	opacity: .9;
+	background-color: #dba51c;
+	background-image: linear-gradient(to left, #dca723, #f5c449);
+	color: #33373e;
+	right: 20px;
+	box-shadow: 0 0 14px 0 #dba51c4f;
+	border-radius: 0 0 50% 50%;
+	padding: 5px 10px;
+	position: absolute;
 }
 /*CODICE PARALLAX*/
 #circle-1 {
