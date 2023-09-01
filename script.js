@@ -91,6 +91,7 @@ list.addEventListener('click', () => {
 	menuPage.style.maxHeight = '150vh';
 	menuPage.style.borderBottom = '10px groove #dba51c';
 	boxSearch.style.opacity = '1';
+	search.style.display = 'block';
 	BoxMenu.style.transform = 'translateX(0%)';
 	headSez1.style.transform = 'translateX(0)';
 	contSez1.style.transform = 'translateX(0)';
@@ -107,6 +108,6 @@ closeMenu.addEventListener('click', () => {
 	BoxMenu.style.transform = 'translateX(200%)';
 	headSez1.style.transform = 'translateX(-100%)';
 	contSez1.style.transform = 'translateX(120%)';
-
+	search.style.display = 'none';
 
 })
