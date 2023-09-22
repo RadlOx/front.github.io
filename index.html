@@ -6,43 +6,289 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<script src="https://kit.fontawesome.com/223110ab61.js" crossorigin="anonymous"></script>
 </head>
-<body>
-	<header id="header">
-		<a href="#" id="logo"><i class="fa-solid fa-rocket"></i> Rocket</a>
-		<div class="check-container" id="container">
-			<div id="moon"><i class="fa-solid fa-moon"></i></div>
-			<!-- <span class="txtbtn" id="darkmode-txt">DARK MODE</span>
-			<span class="txtbtn" id="lightmode-txt">LIGHT MODE</span> -->
-			<div id="sun"><i class="fa-solid fa-sun"></i></div>
+<body id="body">
+	<header class="header">
+		<a href="#" id="logo">
+			<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/MEDICAL_clinic_4.png?v=1693149443" width="40%" alt="">
+		</a>
+
+		<div id="box-icon-header">
+			<div class="box-icon" id="box-1">
+				<i class="fa-solid fa-list" id="menu-icon"></i>
+				<i class="fa-solid fa-x" id="close-menu"></i>
+			</div>
+			<div id="box-search">
+				<input type="search" name="search" id="search-bar" placeholder="Di cosa hai voglia?">
+
+			</div>
+			<div class="box-icon" id="box-2">
+				<i class="fa-solid fa-phone" id="call-us"></i>
+			</div>
 		</div>
-	</header>
-	<main id="main">
-		<div id="slider-container">
-			<button class="btn-slider" id="btn-slider1"><</button>
-			<div id="slider-1">
-				<div class="box-slidercard">
-					<div class="icon-box">
-						<i class="fa-solid fa-gas-pump"></i> <span class="txt-card">Benzina</span>
-						<i class="fa-solid fa-gear"></i> <span class="txt-card">400cv</span>
-						<i class="fa-solid fa-gear"></i> <span class="txt-card">3.0 TFSI</span>
+
+		<!-- PAGINA MENU -->
+		<div class="menu-page" id="menu-page">
+			<div class="relative-menupage">
+				<div class="menu-content" id="menu-cont">
+					<ul class="menu-list">
+						<li class="menu-item">
+							<i class="fa-solid fa-burger"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-fish"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-bowl-food"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-bowl-food"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-bowl-food"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-pepper-hot"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-cheese"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-pizza-slice"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-cocktail"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-burger"></i>
+						</li>
+					</ul>
+					<ul class="menu-list">
+						<li class="menu-item">
+							<i class="fa-solid fa-burger"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-fish"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-bowl-food"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-bowl-food"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-bowl-food"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-pepper-hot"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-cheese"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-pizza-slice"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-cocktail"></i>
+						</li>
+						<li class="menu-item">
+							<i class="fa-solid fa-burger"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="section-reorder">
+					<div id="header-sezione1">
+						<h2>I più venduti</h2>
+					</div>
+					<div class="cont-sezione1" id="cont-sez1">
+						<div id="slider-cont">
+							<ul class="card-list">
+								<li class="cardbox">
+									<div class="card">
+										<div class="box-img-card">
+											<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/panino2.png?v=1693505112" width="100px" alt="">
+										</div>
+										<div class="cont-card">
+											<h2>Triple Burger</h2>
+											<div class="icon-item">
+												<i class="fa-solid fa-pepper-hot"></i>
+												<i class="fa-solid fa-pepper-hot"></i>
+											</div>
+											<p>Triplo hamburger, doppio cheddar, cipolle caram..
+											</p>
+										</div>
+										<a href="#" id="btn-addcart">
+											<i class="fa-solid fa-shopping-cart"></i>
+										</a>
+										<a href="#" id="btn-ingr">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+				
+									</div>
+								</li>
+								<li class="cardbox">
+									<div class="card">
+										<div class="box-img-card">
+											<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/panino2.png?v=1693505112" width="100px" alt="">
+										</div>
+										<div class="cont-card">
+											<h2>Triple Burger</h2>
+											<div class="icon-item">
+												<i class="fa-solid fa-pepper-hot"></i>
+												<i class="fa-solid fa-pepper-hot"></i>
+											</div>
+											<p>Triplo hamburger, doppio cheddar, cipolle caram..
+											</p>
+										</div>
+										<a href="#" id="btn-addcart">
+											<i class="fa-solid fa-shopping-cart"></i>
+										</a>
+										<a href="#" id="btn-ingr">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+				
+									</div>
+								</li>
+								<li class="cardbox">
+									<div class="card">
+										<div class="box-img-card">
+											<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/panino2.png?v=1693505112" width="100px" alt="">
+										</div>
+										<div class="cont-card">
+											<h2>Triple Burger</h2>
+											<div class="icon-item">
+												<i class="fa-solid fa-pepper-hot"></i>
+												<i class="fa-solid fa-pepper-hot"></i>
+											</div>
+											<p>Triplo hamburger, doppio cheddar, cipolle caram..
+											</p>
+										</div>
+										<a href="#" id="btn-addcart">
+											<i class="fa-solid fa-shopping-cart"></i>
+										</a>
+										<a href="#" id="btn-ingr">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+				
+									</div>
+								</li>
+								<li class="cardbox">
+									<div class="card">
+										<div class="box-img-card">
+											<img src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/panino2.png?v=1693505112" width="100px" alt="">
+										</div>
+										<div class="cont-card">
+											<h2>Triple Burger</h2>
+											<div class="icon-item">
+												<i class="fa-solid fa-pepper-hot"></i>
+												<i class="fa-solid fa-pepper-hot"></i>
+											</div>
+											<p>Triplo hamburger, doppio cheddar, cipolle caram..
+											</p>
+										</div>
+										<a href="#" id="btn-addcart">
+											<i class="fa-solid fa-shopping-cart"></i>
+										</a>
+										<a href="#" id="btn-ingr">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+				
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="selection-menu-box">
+							<ul class="selection-menu">
+								<li class="prodotti-menu"></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<button class="btn-slider" id="btn-slider2">></button>
-			<div class="cont-navspan">
-				<span class="navspan"></span>
-				<span class="navspan"></span>
-				<span class="navspan"></span>
-				<span class="navspan"></span>
-				<span class="navspan"></span>
-			</div>
 		</div>
+
+	</header>
+	<!-- PARALLAX -->
+	<div class="circle animate__animated animate__jello" id="circle-3"></div>
+	<div class="circle" id="circle-kcal">
+		<div id="cont-kcal">
+			<h3>Kcal:</h3>
+			<p>545</p>
+		</div>
+	</div>
+	<div class="circle" id="circle-protein">
+		<div id="cont-protein">
+			<h3>Proteine:</h3>
+			<p>545</p>
+		</div>
+	</div>
+	<div class="circle" id="circle-fat">
+		<div id="cont-fat">
+			<h3>Grassi:</h3>
+			<p>545</p>
+		</div>
+	</div>
+	<div class="circle" id="circle-2"></div>
+	<div id="parallax-container">
+		<div class="circle" id="circle-1"></div>
+		<img id="txt-png" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/scritta.png?v=1693145315" alt="">
+
+		<img id="pane-sotto" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/pane_compresso.png?v=1693145315" alt="">
+		
+		<img id="lattuga" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/lattuga_compresso.png?v=1693145316" alt="">
+		
+		<img id="carne" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/carne_compresso.png?v=1693145315" alt="">
+		
+		<img id="formaggio" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/formaggio_compresso.png?v=1693145315" alt="">
+		
+		<img id="pomodoro" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/pomodoro_compresso.png?v=1693145315" alt="">
+		
+		<img id="cipolla" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/10.png?v=1693145315" alt="">
+		
+		<img id="pane-sopra" src="https://cdn.shopify.com/s/files/1/0728/4382/1394/files/9.png?v=1693145316" alt="">
+
+	</div>
+	<div id="ingredienti">
+		<div id="raw1" class="raw">
+			</i><span>PANE SESAMATO</span>
+		</div>
+		<div id="raw2" class="raw">
+			<span>CIPOLLA CARAMELLATA</span>
+		</div>
+		<div id="raw3" class="raw">
+			<span>POMODORO FRESCO</span>
+		</div>
+		<div id="raw4" class="raw">
+			<span>SPESSA FETTA DI CHEDDAR</span>
+		</div>
+		<div id="raw4" class="raw">
+			<span>HAMBURGER DA 250gr</span>
+		</div>
+		<div id="raw4" class="raw">
+			<span>INSALATA FRESCA</span>
+		</div>
+		<div id="raw4" class="raw">
+			<span>PANE SESAMATO</span>
+		</div>
+
+	</div>
+
+	<main>
+		<section id="sec-1">
+			<div id="circle-bgc">
+				
+			</div>
+			<div id="rettangolo-bgc2">
+				
+			</div>
+			<div id="circle-bgc3">
+				
+			</div>
+		</section>
 	</main>
-
-
 	<script src="script.js"></script>
-
 </body>
+
 </html>
